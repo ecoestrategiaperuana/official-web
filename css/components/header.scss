@@ -706,6 +706,29 @@
             column-gap: 7px;
           }
 
+          &--quote {
+            background-color: $color-verde;
+            color: $color-blanco;
+            padding: 11px 0;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            border-radius: 6px;
+            column-gap: 10px !important;
+            
+            img {
+              width: 16px;
+            }
+            
+            p {
+              font-size: 17.5px;
+              font-weight: 600;
+              letter-spacing: 0.02rem;
+            }
+
+          }
+
 
         }
 
