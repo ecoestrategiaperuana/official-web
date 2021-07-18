@@ -706,6 +706,71 @@
             column-gap: 7px;
           }
 
+          &--item {
+            
+            &--content {
+
+              grid-template-columns: 1fr;
+              margin-left: 25px;
+
+              &--third {
+                display: none !important;
+              }
+              &--fourth {
+                display: none !important;
+              }
+              &--fifth {
+                display: none !important;
+              }
+              &--eighth {
+                display: none !important;
+              }
+
+              &--button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 8px;
+                padding: 8.5px 0;
+                background-color: $color-verde;
+                border-radius: 6px;
+                margin-top: 2px;
+
+                img {
+                  width: 25px;
+                  margin-right: 2px;
+                  padding-top: 4px;
+                }
+
+                p {
+                  font-size: 17.5px;
+                  color: $color-blanco !important;
+                  font-weight: 600;
+                  letter-spacing: 0.01rem;
+                }
+              }
+
+            }
+
+            &--home {
+              padding-left: 6px;
+            }
+            &--our {
+              padding-left: 6px;
+            }
+            &--blog {
+              padding-left: 9px;
+            }
+            &--questions {
+              padding-left: 19px;
+            }
+
+          }
+          
+          &--question {
+            display: none !important;
+          }
+
           &--quote {
             background-color: $color-verde;
             color: $color-blanco;
@@ -728,6 +793,7 @@
             }
 
           }
+
 
 
         }
@@ -755,71 +821,24 @@
 
     &__container {
 
-      &--slide {
+      // &--slide {
 
-        &--main {
+      //   &--main {
 
-          &--item {
+      //     &--item {
 
-            &--content {
+      //       &--content {
 
-              grid-template-columns: 1fr;
-              margin-left: 25px;
+              
+      //       }
 
-              &--third {
-                display: none !important;
-              }
-              &--fourth {
-                display: none !important;
-              }
-              &--fifth {
-                display: none !important;
-              }
+            
 
-              &--button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                column-gap: 8px;
-                padding: 7px 0;
-                background-color: $color-verde;
-                border-radius: 6px;
-                margin-top: 2px;
+      //     }
 
-                img {
-                  width: 25px;
-                  margin-right: 2px;
-                }
+      //   }
 
-                p {
-                  font-size: 17px;
-                  color: $color-blanco !important;
-                  font-weight: 600;
-                  letter-spacing: 0.02rem;
-                }
-
-              }
-
-            }
-
-            &--home {
-              padding-left: 6px;
-            }
-            &--our {
-              padding-left: 6px;
-            }
-            &--blog {
-              padding-left: 9px;
-            }
-            &--questions {
-              padding-left: 19px;
-            }
-
-          }
-
-        }
-
-      }
+      // }
 
       &--burger {
 
