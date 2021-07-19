@@ -257,6 +257,13 @@
   }
 
 }
+
+.unset {
+
+  height: unset !important;
+
+}
+
 .menu {
   display: none;
 }
@@ -844,6 +851,26 @@
 
         img {
           width: 29px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .menu {
+
+    &__container {
+
+      &--logo {
+        
+        img {
+          width: 243px;
         }
 
       }
