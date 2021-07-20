@@ -747,7 +747,7 @@ li {
 .main__product-page {
     width: 86%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 6.7rem;
 }
 .breadcrumbs {
     display: flex;
@@ -2348,7 +2348,7 @@ li {
         margin-top: 50px;
     }
     .main__product-page {
-        margin-top: 7rem;
+        margin-top: 6rem;
     }
 }
 
