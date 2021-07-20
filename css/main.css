@@ -4443,7 +4443,7 @@ li {
         justify-content: center;
     }
     .breadcrumbs__space {
-        margin-top: 3rem;
+        margin-top: 0;
     }
     .post__breadcrumbs {
         margin-top: 0;
