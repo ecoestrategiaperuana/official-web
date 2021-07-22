@@ -2182,7 +2182,7 @@ li {
 }
 .four--title {
     font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', system-ui;
     color: var(--color-principal);
     letter-spacing: 0.02rem;
     padding-bottom: 50px;
@@ -2195,7 +2195,7 @@ li {
     column-gap: 15px;
 }
 .four--links--link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', system-ui;
     color: var(--color-principal);
     padding: 12px 20px;
     background-color: var(--color-principal);
