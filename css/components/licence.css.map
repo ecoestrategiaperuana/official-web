@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,UAAU,CAAE,KAAK,CAiBlB,AAfE,AAAD,eAAQ,AAAC,CACP,UAAU,CAAE,MAAM,CAClB,cAAc,CAAE,IAAI,CACpB,SAAS,CAAE,IAAI,CAChB",
+    "sources": [
+        "licence.scss"
+    ],
+    "names": [],
+    "file": "licence.css"
+}
