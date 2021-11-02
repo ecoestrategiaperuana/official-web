@@ -7,8 +7,13 @@
   margin-bottom: 6rem;
 
   &--title {
-    padding: 0 354px 12px;
+    padding: 0 404px 12px;
     @extend .subtitle;
+
+    strong {
+      color: $color-verde
+    }
+
   }
 
   &--text {
@@ -33,13 +38,24 @@
       width: 360px;
 
       &--imgOne {
-        width: 196px;
+
+        img {
+          width: 196px;
+          height: 270px;
+        }
+
       }
       &--imgTwo {
-        width: 307px;
+        img {
+          width: 307px;
+          height: 204px;
+        }
       }
       &--imgThree {
-        width: 232px;
+        img {
+          width: 232px;
+          height: 191px;
+        }
       }
 
       &--title {
@@ -51,16 +67,18 @@
         color: $color-titulo;
         font-weight: 600;
         margin-top: 27px;
-        padding: 0 55px;
+        padding: 0 18px;
       }
 
       &--titleTwo {
-        padding: 0 68px;
+        padding: 0 0;
       }
 
       &--stars {
         filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25));;
         margin-top: 12px;
+        width: 164px;
+        height: 30px;
       }
 
       &--text {
@@ -85,6 +103,11 @@
         column-gap: 12px;
         margin-top: 15px;
 
+        &--icon {
+          width: 43px;
+          height: 43px;
+        }
+
         &--text {
           @extend .personalize__container--group--text;
           color: $color-verde;
@@ -92,9 +115,9 @@
           margin-top: 0;
         }
 
-        &--icon {
+        /* &--icon {
 
-        }
+        } */
 
       }
 
@@ -114,6 +137,10 @@
 
   &__button {
     @extend .cta;
+
+    img {
+      height: 19px;
+    }
   }
 
 }
@@ -123,7 +150,7 @@
   .personalize {
 
     &--title {
-      padding: 0 274px 12px;
+      padding: 0 324px 12px;
     }
 
   }
@@ -136,17 +163,18 @@
 
     &--title {
       font-size: 30px;
+      padding: 0 256px 12px;
     }
 
     &__container {
 
       column-gap: 25px;
 
-      &--group {
+      /* &--group {
 
 
 
-      }
+      } */
 
     }
 
@@ -165,11 +193,11 @@
         width: 340px;
 
         &--title {
-          padding: 0 45px;
+          padding: 0 8px;
         }
 
         &--titleTwo {
-          padding: 0 58px;
+          padding: 0 0;
         }
 
       }
@@ -185,7 +213,7 @@
   .personalize {
 
     &--title {
-      padding: 0 202px 12px;
+      padding: 0 249px 12px;
     }
 
     &__container {
@@ -196,11 +224,11 @@
         width: 320px;
 
         &--title {
-          padding: 0 35px;
+          padding: 0 0;
         }
 
         &--titleTwo {
-          padding: 0 48px;
+          padding: 0 0;
         }
 
       }
@@ -216,7 +244,7 @@
   .personalize {
 
     &--title {
-      padding: 0 169px 12px ;
+      padding: 0 216px 12px;
     }
 
     &__container {
@@ -229,11 +257,11 @@
         width: 350px;
 
         &--title {
-          padding: 0 50px;
+          padding: 0 13px;
         }
 
         &--titleTwo {
-          padding: 0 63px;
+          padding: 0 0;
         }
 
       }
@@ -248,7 +276,7 @@
 
     &--title {
       font-size: 28px;
-      padding: 0 96px 12px ;
+      padding: 0 140px 12px;
     }
 
     &--text {
@@ -269,11 +297,11 @@
   .personalize {
 
     &--title {
-      padding: 0 63px 12px;
+      padding: 0 107px 12px;
     }
 
     &--text {
-      padding: 0 114px;
+      padding: 0 130px;
     }
 
     &__container {
@@ -295,12 +323,12 @@
     &--title {
       font-size: 24px;
       line-height: 38px;
-      padding: 0 42px 12px;
+      padding: 0 37px 12px;
     }
 
     &--text {
       font-size: 17px;
-      padding: 0 35px;
+      padding: 0 48px;
     }
 
     &__container {
@@ -311,12 +339,12 @@
 
         &--title {
           font-size: 19px;
-          padding: 0 51px;
+          padding: 0 16px;
         }
 
         &--titleTwo {
           font-size: 19px;
-          padding: 0 63px;
+          padding: 0 0;
         }
 
         &--stars {
@@ -351,12 +379,12 @@
     &--title {
       font-size: 22px;
       line-height: 36px;
-      padding: 0 19px 12px;
+      padding: 0 14px 12px;
     }
 
     &--text {
       font-size: 16px;
-      padding: 0 6px;
+      padding: 0 42px;
     }
 
     &__container {
@@ -365,12 +393,12 @@
 
         &--title {
           font-size: 18px;
-          padding: 0 57px;
+          padding: 0 24px;
         }
 
         &--titleTwo {
           font-size: 18px;
-          padding: 0 69px;
+          padding: 0 0;
         }
 
         &--text {
@@ -422,11 +450,11 @@
     &--title {
       font-size: 21px;
       line-height: 34px;
-      padding: 0 32px 12px;
+      padding: 0 3px 12px;
     }
 
     &--text {
-      padding: 0 10px;
+      padding: 0 22px;
     }
 
     &__button {
@@ -452,11 +480,11 @@
 
     &--title {
       font-size: 20px;
-      padding: 0 22px 12px;
+      padding: 0 4px 12px;
     }
 
     &--text {
-      padding: 0 10px;
+      padding: 0 12px;
     }
 
   }
@@ -473,7 +501,7 @@
     }
 
     &--text {
-      padding: 0 2px;
+      padding: 0 12px;
     }
 
   }
@@ -486,11 +514,11 @@
 
     &--title {
       font-size: 20px;
-      padding: 0 7px 12px;
+      padding: 0 0px 12px;
     }
 
     &--text {
-      padding: 0 2px;
+      padding: 0 0px;
     }
 
     &__container {

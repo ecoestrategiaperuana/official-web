@@ -13,15 +13,21 @@
 
 .product {
   @extend .space;
+  margin-bottom: 5rem;
 
   &--title {
     @extend .subtitle;
-    padding-bottom: 12px;
+    padding: 0 425px 12px;
+
+    strong {
+      color: $color-verde;
+    }
+
   }
 
   &--text {
     @extend .subtext;
-    padding:  0 300px 30px;
+    padding: 0 352px 30px;
   }
 
   &__container {
@@ -141,6 +147,19 @@
 .swiper-pagination-bullet-active-next,
 .swiper-pagination-bullet-active-next-next {
   opacity: .4;
+}
+
+@media screen and (max-width: 1366px) {
+  .product {
+
+    &--title {
+      padding: 0px 388px 12px;
+    }
+  
+    &--text {
+      padding: 0 315px 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {

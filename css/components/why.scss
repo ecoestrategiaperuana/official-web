@@ -6,7 +6,12 @@
 
   &--title {
     @extend .subtitle;
-    padding: 0 409px 12px;
+    padding: 0 443px 12px;
+
+    strong {
+      color: $color-verde
+    }
+
   }
 
   &--text {
@@ -36,7 +41,12 @@
         line-height: 31px;
         font-weight: 600;
         letter-spacing: 0.02rem;
-        padding-bottom: 13px
+        padding-bottom: 13px;
+
+        strong {
+          font-weight: 600
+        }
+
         
       }
 
@@ -45,6 +55,11 @@
         font-size: 16px;
         text-align: unset;
         line-height: 31px;
+
+        strong {
+          color: $color-verde;
+        }
+
       }
 
     }
@@ -55,6 +70,7 @@
 
         img {
           width: 1000px;
+          height: unset;
         }
 
       }
@@ -66,7 +82,7 @@
   &__icons {
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     justify-items: center;
     width: 87%;
@@ -107,6 +123,31 @@
         padding-top: 9px;
       }
 
+      &--first {
+        img {
+          width: 86px;
+          height: 82px;
+        }
+      }
+      &--second {
+        img {
+          width: 85px;
+          height: 87px;
+        }
+      }
+      &--third {
+        img {
+          width: 129px;
+          height: 82px;
+        }
+      }
+      &--fourth {
+        img {
+          width: 85px;
+          height: 85px;
+        }
+      }
+
     }
 
     
@@ -120,6 +161,7 @@
 
     img {
       width: 17px;
+      height: 19px;
       margin-right: 12px;
     }
 
@@ -162,7 +204,7 @@
   .why {
 
     &--title {
-      padding: 0 327px 12px;
+      padding: 0 374px 12px;
     }
 
   }
@@ -175,7 +217,7 @@
 
 
     &--title {
-      padding: 0 313px 12px;
+      padding: 0 347px 12px;
     }
 
     &__icons {
@@ -208,7 +250,7 @@
 
     &--title {
       font-size: 30px;
-      padding: 0 267px 12px;
+      padding: 0 299px 12px;
     }
 
     &__icons {
@@ -238,11 +280,11 @@
   .why {
 
     &--title {
-      padding: 0 220px 12px;
+      padding: 0 252px 12px;
     }
 
     &__icons {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
 
       &--group {
 
@@ -269,7 +311,7 @@
   .why {
 
     &--title {
-      padding: 0 168px 12px;
+      padding: 0 200px 12px;
     }
 
     &__icons {
@@ -296,7 +338,7 @@
 
     &--title {
       font-size: 28px;
-      padding: 0px 132px 12px;
+      padding: 0px 174px 12px;
     }
 
     &--text {
@@ -314,7 +356,7 @@
         }
 
         &--text {
-          font-size: 15px;
+          font-size: 16px;
         }
 
       }
@@ -372,8 +414,8 @@
   .why {
 
     &--title {
-      padding: 0px 99px 12px;
-      line-height: 33px;
+      padding: 0px 141px 12px;
+      line-height: 38px;
     }
 
     &--text {
@@ -439,7 +481,7 @@
     &--title {
       font-size: 24px;
       line-height: 38px;
-      padding: 0px 30px 12px;
+      padding: 0px 66px 12px;
     }
 
     &--text {
@@ -463,8 +505,7 @@
 
     &__icons {
 
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       row-gap: 30px;
 
       &--group {
@@ -493,7 +534,7 @@
     &--title {
       font-size: 22px;
       line-height: 36px;
-      padding: 0px 7px 12px;
+      padding: 0px 40px 12px;
     }
 
     &--text {
@@ -518,8 +559,7 @@
     }
 
     &__icons {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       row-gap: 30px;
 
       &--group {
@@ -667,7 +707,7 @@
   .why {
 
     &--title {
-      padding: 0px 0px 12px;
+      padding: 0px 19px 12px;
     }
 
     &--text {

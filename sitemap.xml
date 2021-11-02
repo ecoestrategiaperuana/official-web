@@ -74,36 +74,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ecoestrategiaperuana.com/blog.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.85</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/biodegradable.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/ecologico.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/medio-ambiente.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/contaminacion.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.75</priority>
-</url>
-<url>
   <loc>https://ecoestrategiaperuana.com/preguntas-frecuentes.html</loc>
   <lastmod>2021-07-21T19:42:38+00:00</lastmod>
   <changefreq>daily</changefreq>
@@ -397,54 +367,7 @@
   <changefreq>daily</changefreq>
   <priority>0.90</priority>
 </url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/medio-ambiente/micro-plastico.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/biodegradable/el-azucar-hecho-plastico.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/biodegradable/comer-hasta-salvar-el-mundo.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/medio-ambiente/hablemos-del-cambio.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/medio-ambiente/ser-ecologicos-es-una-ambicion-posible.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/ecologico/sencilla-receta-plastico-de-maicena-casero.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/ecologico/que-es-el-pla-y-por-que-esta-en-nuestros-vasos-y-cubiertos.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://ecoestrategiaperuana.com/blog/contaminacion/economia-desde-la-basura.html</loc>
-  <lastmod>2021-07-21T19:42:38+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.70</priority>
-</url>
+
 
 
 </urlset>

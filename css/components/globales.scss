@@ -20,6 +20,41 @@ $color-product--feature: #C4C4B7;
 $color--product--hover: #6AD628;
 $color-icon-movil: #888888;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', system-ui;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .subtitle {
   font-family: $fuente1;
   font-size: 32px;
@@ -30,6 +65,8 @@ $color-icon-movil: #888888;
 
   span {
     color: $color-verde;
+    padding: 0;
+    margin: 0;
   }
 
 }

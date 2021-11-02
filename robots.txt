@@ -2,5 +2,6 @@ User-Agent: *
 Disallow: 
 Disallow: /landings/*
 Disallow: /licencias.html
+Disallow: /adquirir-licencias.html
 
 Sitemap: https://ecoestrategiaperuana.com/sitemap.xml

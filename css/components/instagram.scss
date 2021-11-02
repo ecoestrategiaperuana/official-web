@@ -34,6 +34,13 @@
         }
 
       }
+
+      &--img {
+        img {
+          width: 331px;
+          height: unset;
+        }
+      }
       
     }
 
@@ -61,3 +68,22 @@
   }
 
 } 
+
+@media screen and (max-width: 550px) {
+
+  .instagram {
+
+    &__container {
+      &--wrapp {
+        &--img {
+          img {
+            width: unset;
+            height: unset;
+          }
+        }
+      }
+    }
+
+  }
+
+}
