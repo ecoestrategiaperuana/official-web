@@ -1,0 +1,123 @@
+/* --------------- MAPS FORM--------------- */
+.maps {
+  width: 85%;
+  margin: auto;
+}
+.maps__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 35px;
+  margin: 75px 0 40px;
+}
+.maps__location {
+  width: 100%;
+  border-radius: 15px;
+}
+.maps__title {
+  font-family: $fuente1;
+  font-size: 32px;
+  letter-spacing: 0.02rem;
+  color: #2F2D2D;
+}
+.maps__info {
+  margin-left: 5px;
+}
+.maps__info-container {
+  margin: 16px 0;
+}
+.maps__subtitle {
+  font-size: 20px;
+  font-family: $fuente2;
+  padding-bottom: 8px;
+  color: #2F2D2D;
+  letter-spacing: 0.02rem;
+}
+.maps__text {
+  font-family: $fuente2;
+  padding-bottom: 7px;
+  color: #2F2D2D;
+  letter-spacing: 0.02rem;
+}
+
+
+@media screen and (max-width: 1366px) {
+  /* -------------------- MAPS -------------------- */
+      .maps {
+          width: 90%;
+          margin: auto;
+      }
+}
+
+
+@media screen and (max-width: 1280px) {
+/* -------------------- MAPS -------------------- */
+    .maps {
+        width: 88%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 840px) {
+.maps {
+        width: 82%;
+    }
+    .maps__direction {
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+.maps__container {
+        grid-template-columns: 1fr;
+    }
+    .maps__info {
+        order: 1;
+        text-align: center;
+        margin-left: 0;
+    }
+    .maps__title {
+        font-size: 32px;
+    }
+    .maps__direction {
+        order: 2;
+    }
+}
+
+
+
+@media screen and (max-width: 476px) {
+.maps__title {
+        font-size: 28px;
+    }
+    .maps__subtitle {
+        font-size: 18px;
+    }
+    .maps__text {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+.maps__title {
+        font-size: 26px;
+    }
+    .maps__subtitle {
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (max-width: 380px) {
+.maps__title {
+        font-size: 24px;
+    }
+    .maps__subtitle {
+        font-size: 16px;
+    }
+}
