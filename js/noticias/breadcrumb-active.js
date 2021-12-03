@@ -1,4 +1,4 @@
-let contenedor = document.getElementById('container');
+// let contenedor = document.getElementById('container');
 // let items = contenedor.getElementsByClassName('item');
 
 
@@ -20,3 +20,25 @@ let contenedor = document.getElementById('container');
 //   })
 
 // } 
+
+
+
+
+// var btnContainer = document.getElementById("breadcrumbs");
+// var btns = btnContainer.getElementsByClassName("breadcrumb");
+
+
+var links = document.querySelectorAll(".main__indice--container--wrapper li a");
+
+links.forEach(a => {
+  a.addEventListener("click", () => {
+    resetLinks();
+    a.classList.add('activine');
+  })
+})
+
+function resetLinks () {
+  links.forEach(a => {
+    a.classList.remove('activine')
+  })
+}
