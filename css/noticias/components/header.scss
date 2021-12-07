@@ -100,7 +100,7 @@
             justify-items: center;
             align-items: center;
             width: 693px;
-            height: 340px;
+            height: 410px;
             background-color: $color-blanco;
             position: absolute;
             top: 91px;
@@ -137,9 +137,14 @@
                   margin: 0 14px 0 5px;
                 }
                 &--imgFour {
-                  width: 33px;
-                  height: 50px;
+                  width: unset;
+                  height: 56px;
                   margin: 0 28px 0 15px;
+                }
+                &--imgFive {
+                  width: unset;
+                  height: 52px;
+                  margin: 0 16px 0 7px;
                 }
 
                 &--text {
@@ -185,9 +190,14 @@
                   margin: 0 18px 0 9px;
                 }
                 &--imgEight {
-                  width: 38px;
-                  height: 55px;
-                  margin-right: 24px;
+                  width: unset;
+                  height: 59px;
+                  margin-right: 19px;
+                }
+                &--imgTen {
+                  height: 43px;
+                  width: unset;
+                  margin: 0;
                 }
 
                 &--text {
@@ -201,7 +211,7 @@
                 }
                 &--six {
                   position: absolute;
-                  top: 108px;
+                  top: 179px;
                   right: 48px;
                 }
                 &--seven {
@@ -210,7 +220,16 @@
                   right: 75px;
                 }
                 &--eight {
-                  padding-top: 90.5%;
+                  position: absolute;
+                  right: 44px;
+                  top: 333px;
+                }
+                &--ten {
+                  position: absolute;
+                  top: 97px;
+                  right: 63px;
+                  display: flex;
+                  gap: 6px;
                 }
               }
 
