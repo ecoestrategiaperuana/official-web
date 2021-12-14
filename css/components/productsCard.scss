@@ -611,6 +611,9 @@
   .relacionados__text {
     padding: 0 28px;
   }
+  .products__category__ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 

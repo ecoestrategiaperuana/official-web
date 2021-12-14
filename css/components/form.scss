@@ -165,11 +165,12 @@
 
 .form__container--contact--container {
     width: 762px;
-    padding: 20px 31px;
+    padding: 0;
 }
 
 .form__container--contact--container--wrap {
   display: grid;
+  padding: 20px 31px;
 }
 
 .form__container--contact--container--wrap--group {
@@ -418,6 +419,9 @@
     
     .form__container--contact--container {
         width: 100%;
+    }
+    .form__container--contact--container--wrap {
+      padding: 0;
     }
 }
 

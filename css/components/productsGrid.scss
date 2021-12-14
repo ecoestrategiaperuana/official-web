@@ -25,19 +25,24 @@
 .products__category__title {
   font-family: $fuente1;
   border-bottom: 3px solid $color-verde;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   font-size: 24px;
   color: $color-titulo;
 }
 .products__category__description {
   color: $color-texto;
-  font-size: 16.5px;
+  font-size: 18px;
   font-family: $fuente2;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
   line-height: 1.6;
   margin-top: 40px;
   text-align: center;
-  padding: 0 62px;
+  padding: 0 50px;
+
+  strong {
+    color: $color-verde;
+  }
+
 }
 .products__categorys {
   font-family: $fuente1;
@@ -402,6 +407,7 @@
 
 @media screen and (max-width: 840px) {
   .products__category__ul {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .products__content--container {
