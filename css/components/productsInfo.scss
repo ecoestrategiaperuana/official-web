@@ -1,5 +1,9 @@
 .products__info {
 
+  &--space {
+    margin-top: 50px;
+  }
+
   &--title {
     font-family: $fuente1;
     font-size: 26px;
@@ -179,7 +183,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
 
   .products__contact--desktop {
     display: none;

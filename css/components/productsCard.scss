@@ -12,7 +12,7 @@
 }
 .breadcrumbs__item:not(:last-of-type)::after {
   content: '/';
-  margin: 0 5px;
+  margin: 0 3px;
 }
 .breadcrumbs__link {
   font-family: $fuente2;
@@ -427,6 +427,7 @@
 .products__content--container--sku {
   color: $color-verde;
   font-size: 20px;
+  font-weight: 600;
 }
 .products__content--container--price {
   font-size: 18px;
@@ -507,6 +508,9 @@
 @media screen and (max-width: 1280px) {
   .form__desktop__container--group {
     grid-template-columns: 2fr 1.2fr;
+  }
+  .breadcrumbs__item:not(:last-of-type)::after {
+    margin: 0 1px;
   }
 }
 
