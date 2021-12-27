@@ -3,3 +3,16 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+# REDIRECCIONES
+[[redirects]]
+  from = "/descartables/bowls-biodegradables-de-bambu.html"
+  to = "https://ecoestrategiaperuana.com/bowls-bambu.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/descartables/bowls-biodegradables-de-bambu"
+  to = "https://ecoestrategiaperuana.com/bowls-bambu"
+  status = 301
+  force = true
