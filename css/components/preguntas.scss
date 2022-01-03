@@ -202,8 +202,9 @@ input[type="checkbox"]{
       line-height: 185.8%;
   }
 
-  .faq__container--item--content p {
-      font-size: 15px;
+  .faq__container--item--content p,
+  .faq__container--item--content li {
+      font-size: 16px;
   }
 
   .faq__container--item label img {
@@ -243,7 +244,8 @@ input[type="checkbox"]{
       padding-right: 18px;
   }
 
-  .faq__container--item--content p {
+  .faq__container--item--content p 
+  .faq__container--item--content li{
       font-size: 14px;
   }
 }
