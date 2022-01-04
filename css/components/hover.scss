@@ -379,6 +379,8 @@
   letter-spacing: 0.02rem;
   color: $color-titulo;
   font-weight: 700;
+  line-height: 36px;
+  padding: 0 30px;
 
   strong {
     color: $color-verde;
@@ -495,7 +497,7 @@
     margin: 92px 15px 0;
   }
   .hover__container  {
-    gap: 24px;
+    gap: 20px;
   }
   .hover__container--left--breadcrumb {
     line-height: 23px;
@@ -574,6 +576,7 @@
     font-size: 20px;
     line-height: 29px;
     margin: 15px 0 0px 0;
+    padding: 0 15px;
   }
 
 } 
@@ -596,7 +599,7 @@
 
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 398px) {
   .hover__container--right--sellers {
     gap: 5px;
   }
