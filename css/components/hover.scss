@@ -411,6 +411,10 @@
   }
 }
 
+.form--space--product {
+  margin: 70px 0;
+}
+
 @media screen and (max-width: 1366px) {
 
   .products__info--product {
@@ -559,6 +563,7 @@
   }
   .hover__container--right--info {
     font-size: 17px;
+    line-height: 25px;
   }
   .faq__container--product {
     padding: 0;
@@ -577,6 +582,17 @@
     line-height: 29px;
     margin: 15px 0 0px 0;
     padding: 0 15px;
+  }
+  // .hover__container--left--hover--img:first-child {
+  //   border: 3px solid #61CC1F;
+  // }
+
+  // .hover__container--left--hover picture:hover {
+  //   border: 3px solid #FFFFFF;
+  // }
+
+  .hover__container--left--hover--img--active {
+    border: 3px solid #61CC1F;
   }
 
 } 
