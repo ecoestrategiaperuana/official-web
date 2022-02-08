@@ -6,13 +6,13 @@
 
 # REDIRECCIONES
 [[redirects]]
-  from = "/descartables/bowls-biodegradables-de-bambu.html"
+  from = "/bowls-biodegradables-de-bambu.html"
   to = "https://ecoestrategiaperuana.com/bowls-bambu.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/descartables/bowls-biodegradables-de-bambu"
+  from = "/bowls-biodegradables-de-bambu"
   to = "https://ecoestrategiaperuana.com/bowls-bambu"
   status = 301
   force = true
