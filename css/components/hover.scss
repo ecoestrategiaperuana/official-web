@@ -72,6 +72,16 @@
     &--right {
       margin-top: 8px;
 
+      &--special {
+
+        &--preventa {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+      }
+
       &--delivery {
         font-family: $fuente1;
         color: $color-verde;
@@ -234,6 +244,14 @@
           font-size: 18px;
           line-height: 21px;
           color: $color-titulo;
+
+          &--preventa {
+            font-weight: 700;
+            line-height: 27px;
+            padding-right: 15px;
+            color: $color-verde;
+          }
+
         }
 
       }
@@ -570,6 +588,10 @@
   }
   .faq__container--item--product {
     margin-right: 5px;
+  }
+  .hover__container--right--special--preventa {
+    display: grid;
+    gap: 25px;
   }
   .hover__container--right--delivery {
     font-size: 19px;

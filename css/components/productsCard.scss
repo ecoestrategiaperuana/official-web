@@ -405,7 +405,7 @@
   display: block;
   width: 170px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .related__products__link {
   font-family: $fuente2;
@@ -415,6 +415,14 @@
   border-radius: 4px;
   border: 1px solid $color-verde;
   color: $color-verde;
+  font-size: 17px;
+  margin-top: 3px;
+}
+.related__products__link--preventa {
+  background-color: $color-verde;
+  color: $color-blanco;
+  font-weight: 700;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,.25);
 }
 .products__content--container--wrap {
   border-radius: 22px;
