@@ -720,9 +720,11 @@
     }
     .products__main {
         display: block;
+        width: 94%;
     }
     .products__content--container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 12px;
     }
     .products__category__title {
         font-size: 24px;
@@ -833,6 +835,8 @@
     }
     .products__content--container--wrap {
       padding: 15px 0 35px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
     }
 
 }
@@ -863,9 +867,19 @@
     .related__products__keyword {
         line-height: 1.7;
         margin-bottom: 8px;
+        padding: 0 4px;
+        font-size: 15px;
+
+    }
+    .related__products__stars {
+      width: 125px;
     }
     .products__content--container--sku {
-        font-size: 21px;
+        font-size: 18px;
+    }
+    .related__products__link {
+      padding: 8px 22px;
+      font-size: 16px;
     }
 
     // ---------------------- FORM -------------------------
