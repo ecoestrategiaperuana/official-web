@@ -1,12 +1,13 @@
 .header {
 
   position: fixed;
-  background-color: $color-blanco;
+  background-color: $background-header;
   top: 0;
   z-index: 99;
   width: 100%;
   margin: auto;
-  padding: 15px 42px 13px;
+  padding: 5px 42px 3px;
+  margin-top: 26px;
 
   &__container {
 
@@ -19,8 +20,8 @@
       picture {
 
         img {
-          width: 355px;
-          height: 73px;
+          width: 287px;
+          height: 58px;
         }
 
       }
@@ -47,7 +48,6 @@
             font-weight: 400;
             line-height: 27px;
             letter-spacing: 0.01rem;
-            padding: 25px 0;
             font-family: $fuente1;
 
             i {
@@ -78,19 +78,19 @@
           &--button {
             display: flex;
             align-items: center;
-            column-gap: 12px;
-            padding: 10px 25px;
+            column-gap: 8px;
+            padding: 6px 12px;
             background-color: $color-verde;
-            border-radius: 8px;
+            border-radius: 5px;
             color: $color-blanco;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 27px;
             font-weight: 600;
-            letter-spacing: 0.01rem;
+            // letter-spacing: 0.01rem;
 
             img {
               width: 18px;
-              height: 20px;
+              height: 19px;
             }
           }
 
@@ -323,6 +323,40 @@
 
 }
 
+.header__container__superior--nav {
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.header__container__superior--nav--li--a {
+  column-gap: 10px;
+}
+
+.header__container__superior--nav--li--a img{
+  height: 22px;
+  width: auto;
+}
+
+.header__container--menu--list--li--ecommerce {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 6px 12px;
+  background-color: $color-verde;
+  border-radius: 5px;
+  color: $color-blanco;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  // letter-spacing: 0.01rem;
+  font-family: $fuente1;
+}
+
+.header__container--menu--list--li--ecommerce--icon {
+  height: 21px;
+  width: auto;
+}
+
 .unset {
 
   height: unset !important;
@@ -430,7 +464,7 @@
     padding: 0 30px 15px;
     display: flex;
     flex-direction: column;
-    top: 0;
+    top: auto;
     z-index: 111;
 
     &__container {
@@ -679,7 +713,7 @@
     &__container {
 
       &--slide {
-        top: 5rem;
+        top: 6.2rem;
         padding: 15px 25px 0;
 
         &--main {
@@ -929,6 +963,22 @@
           height: 49px;
         }
 
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .menu {
+
+    &__container {
+
+      &--slide {
+        top: 7.5rem;
       }
 
     }
