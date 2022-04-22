@@ -1,5 +1,5 @@
 var swiper = new Swiper(".productSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 5,
   spaceBetween: 27,
   autoplay: {
     delay: 1250,
@@ -10,5 +10,13 @@ var swiper = new Swiper(".productSwiper", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 4
+    }, 
+    1512: {
+      slidesPerView: 5
+    }
   }
 });
