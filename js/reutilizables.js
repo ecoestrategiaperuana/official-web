@@ -20,11 +20,35 @@ window.addEventListener('load', function () {
 
       responsive: [
 
+        {
+            breakpoint: 1700,
+            settings: {
+                slidesToShow: '5',
+                slidesToScroll: '5',
+                itemWidth: 350,
+                rewind: true,
+                duration: 0.6
+                
+            }
+        },
+
+        {
+            breakpoint: 1320,
+            settings: {
+                slidesToShow: '4',
+                slidesToScroll: '4',
+                itemWidth: 350,
+                rewind: true,
+                duration: 0.6
+                
+            }
+        },
+
           {
               breakpoint: 1152,
               settings: {
-                  slidesToShow: 'auto',
-                  slidesToScroll: 'auto',
+                  slidesToShow: '3',
+                  slidesToScroll: '3',
                   itemWidth: 350,
                   rewind: true,
                   duration: 0.6

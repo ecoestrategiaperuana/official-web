@@ -2,7 +2,7 @@ var swiper = new Swiper(".productSwiper", {
   slidesPerView: 5,
   spaceBetween: 27,
   autoplay: {
-    delay: 1250,
+    delay: 10000250,
     disableOnInteraction: false
   },
   initialSlide: 1,
@@ -13,10 +13,10 @@ var swiper = new Swiper(".productSwiper", {
   },
   breakpoints: {
     1280: {
-      slidesPerView: 4
+      slidesPerView: 5
     }, 
     1512: {
-      slidesPerView: 5
+      slidesPerView: 6
     }
   }
 });
