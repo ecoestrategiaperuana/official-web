@@ -2,7 +2,7 @@ var swiper = new Swiper(".productSwiper", {
   slidesPerView: 5,
   spaceBetween: 27,
   autoplay: {
-    delay: 10000250,
+    delay: 1250,
     disableOnInteraction: false
   },
   initialSlide: 1,

@@ -573,6 +573,7 @@
   .main {
 
     grid-template-columns: 0.9fr 3.7fr 0.5fr;
+    margin-top: 105px;
 
     &__social {
       display: block;
@@ -635,7 +636,7 @@
 @media screen and (min-width: 1280px) {
 
   .main {
-    margin: 15px 42px 30px;
+    margin: 105px 42px 30px;
     grid-template-columns: 1.3fr 5fr 1fr;
     gap: 110px;
 
@@ -761,7 +762,7 @@
 @media screen and (min-width: 1360px) {
 
   .main {
-    margin: 15px 89px 30px;
+    margin: 105px 89px 30px;
     grid-template-columns: 1.9fr 7fr 1fr;
 
     &__article {

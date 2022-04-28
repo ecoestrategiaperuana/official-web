@@ -21,8 +21,8 @@ window.addEventListener('load', function () {
         {
           breakpoint: 650,
           settings: {
-              slidesToShow: 'auto',
-              slidesToScroll: 'auto',
+              slidesToShow: '2',
+              slidesToScroll: '2',
               itemWidth: 350,
               rewind: true,
               duration: 0.6
@@ -33,8 +33,8 @@ window.addEventListener('load', function () {
         {
           breakpoint: 1024,
           settings: {
-              slidesToShow: 'auto',
-              slidesToScroll: 'auto',
+              slidesToShow: '3',
+              slidesToScroll: '3',
               itemWidth: 350,
               rewind: true,
               duration: 0.6
@@ -47,6 +47,18 @@ window.addEventListener('load', function () {
           settings: {
               slidesToShow: '4',
               slidesToScroll: '4',
+              itemWidth: 350,
+              rewind: true,
+              duration: 0.6
+              
+          }
+        },
+
+        {
+          breakpoint: 1430,
+          settings: {
+              slidesToShow: '5',
+              slidesToScroll: '5',
               itemWidth: 350,
               rewind: true,
               duration: 0.6
