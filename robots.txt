@@ -4,5 +4,6 @@ Disallow: /landings/*
 Disallow: /licencias.html
 Disallow: /adquirir-licencias.html
 Disallow: /noticias/plantilla.html
+Disallow: /prueba.html
 
 Sitemap: https://ecoestrategiaperuana.com/sitemap.xml

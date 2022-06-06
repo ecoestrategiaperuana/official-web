@@ -15,4 +15,4 @@
   from = "/bowls-biodegradables-de-bambu"
   to = "https://ecoestrategiaperuana.com/bowls-bambu"
   status = 301
-  force = true
+  force = true 
