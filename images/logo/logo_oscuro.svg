@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="793.6275"
+   height="121.25062"
+   viewBox="0 0 793.62747 121.25061"
+   sodipodi:docname="LOGO WEB (1).ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <path
+         d="M 0,800 H 800 V 0 H 0 Z"
+         id="path18" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath36">
+      <path
+         d="M 0,800 H 800 V 0 H 0 Z"
+         id="path34" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,-195.17999,178.02262)">
+    <g
+       id="g14"
+       transform="translate(47.285894,-170.80823)"
+       inkscape:export-filename="..\Pictures\Inkscape\logo_oscuro.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g16"
+         clip-path="url(#clipPath20)">
+        <g
+           id="g22"
+           transform="translate(140.7031,304.3252)">
+          <path
+             d="m 0,0 c -39.764,-4.418 -41.604,-40.499 -41.604,-40.499 v -28.412 c 4.154,21.791 18.718,29.081 36.91,38.445 26.509,12.15 32.031,27.336 32.031,27.336 5.522,-50.531 -13.254,-64.891 -38.382,-68.204 0.701,0.093 1.395,0.195 2.086,0.305 -4.44,-0.249 -9.683,0.383 -11.567,4.298 -3.589,7.455 10.471,12.876 15.833,16.936 10.851,8.221 23.895,16.356 26.231,30.927 0.002,0.014 0.004,0.03 0.007,0.045 -5.867,-12.743 -17.368,-20.621 -28.712,-27.952 -9.819,-6.347 -22.531,-13.063 -28.92,-23.228 -1.809,-2.879 -2.977,-6.064 -3.832,-9.341 -0.674,-2.581 -0.504,-7.351 -1.447,-10.254 -0.093,-0.181 -0.168,-0.34 -0.238,-0.488 v -0.852 H 7.731 c 38.29,2.577 40.869,41.971 40.869,41.971 V 0 Z"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path24" />
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(1,-1)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.3468px;font-family:'LEMON MILK';-inkscape-font-specification:LEMONMILK-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text28"
+       x="367.28391"
+       y="-48.963272"><tspan
+         x="367.28391 407.15552 445.90594 485.64905 526.08679 569.58185 613.44611"
+         y="-48.963272"
+         sodipodi:role="line"
+         id="tspan26">PERUANA</tspan></text>
+    <g
+       id="g30"
+       transform="translate(47.285894,-170.80823)">
+      <g
+         id="g32"
+         clip-path="url(#clipPath36)">
+        <path
+           d="m 297.195,228.42 h -74.537 v 1.962 h 74.537 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path38" />
+        <path
+           d="m 684.585,228.42 h -74.537 v 1.962 h 74.537 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path40" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(1.0221158,-0.97836275)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.4287px;font-family:'LEMON MILK';-inkscape-font-specification:LEMONMILK-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.978363"
+       id="text44"
+       x="248.14038"
+       y="-90.633331"><tspan
+         x="248.14038 282.86374 322.89001 371.80295 406.52631 442.07297 476.50574 514.61908 553.01819 587.45099 622.17432 669.68286 688.81213"
+         y="-90.633331"
+         sodipodi:role="line"
+         id="tspan42"
+         style="stroke-width:0.978363">ECOESTRATEGIA</tspan></text>
+  </g>
+</svg>
