@@ -7407,9 +7407,10 @@ input[type=radio] {
 }
 
 .social {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid; 
+    grid-template-columns: auto auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .social a {
@@ -7420,7 +7421,15 @@ input[type=radio] {
 
 .social--container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.social--container ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .suscribe__base {
@@ -7430,10 +7439,16 @@ input[type=radio] {
     background: var(--secondary-color);
     border-radius: 10px;
     display: grid;
+    justify-content: center;
 }
 
-.suscribe a {
-    text-align: center;
+.suscribe ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    margin-top: 0.7rem;
 }
 
 .container {
