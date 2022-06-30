@@ -1,0 +1,23 @@
+mixin productsCategory(categoryContainer ,list, linkTo, imgSrc, imgAlt, title)
+    div(class= categoryContainer)
+        hr.lineCategory
+        a(class= list href= LinkTo)
+            img(src= imgSrc, alt= imgAlt)
+            p= title
+
+mixin productsList(nameDivProductList, imageDirection, title, code, stock, nameDivProductListContainer, price)
+                div(class= nameDivProductList)
+                    .products__list--img
+                        img(src=imageDirection, alt="")
+                    .products__list--text
+                        h4= title
+                        p= code
+                        .products__list--text--stock
+                            i.fa-solid.fa-circle-check 
+                            p= stock
+                    div(class= nameDivProductListContainer)
+                        .products__list--price
+                            p= price
+                        .products__list--button
+                            a(href="")
+                                i.fa-solid.fa-arrow-right

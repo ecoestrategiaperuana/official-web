@@ -1,2 +1,16 @@
-include components/header.pug
-doctype html 
+include configurations.pug
+doctype html
+html(lang="en")
+    include templates/head.pug
+        title Envases biodegradables
+        include templates/script.pug
+    body
+        //-Social Buttom (personal) start here
+        include templates/social-buttom.pug
+        //-Social Buttom (personal) end here
+        //-Header start here
+        include templates/header.pug
+        //-Header end here
+        //-Main start here
+        include templates/producto-list.pug
+        //-Main end here
