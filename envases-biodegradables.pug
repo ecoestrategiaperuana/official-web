@@ -1,11 +1,11 @@
 include configurations.pug
 include mixins.pug
-doctype html
+doctype doctype html
 html(lang="en")
     include templates/head.pug
         title Envases biodegradables
         include templates/script.pug
-    body
+    body 
         //-Social Buttom (personal) start here
         include templates/social-buttom.pug
         //-Social Buttom (personal) end here
@@ -14,60 +14,20 @@ html(lang="en")
         //-Header end here
         //-Main start here
         .productos__container
-            .productos__container--list 
+            .productos__container--list
                 .productos__container--list--title
-                    h2 Categorias
+                    h2 CATEGORIAS
                 .productos__container--list--m
-                    .productos__container--list--0.productos__container--list--envb--0
-                        hr.lineCategory.lineCategory--0
-                        a.productos__container--list--a--0(href="envases-biodegradables.html")
-                            img(src="images/icons/envases_biodegradable.svg", alt="envases biodegradables")
-                            p Envases biodegradables
-                    .productos__container--list--1.productos__container--list--envb--1
-                        hr.lineCategory
-                        a.productos__container--list--a--1(href="")
-                            img(src="images/icons/bowl_bambu.svg", alt="")
-                            p Bowls de bambú
-                    .productos__container--list--2.productos__container--list--envb--2
-                        hr.lineCategory
-                        a.productos__container--list--a--2(href="")
-                            img(src="images/icons/cubiertos_biodegradables.svg", alt="")
-                            p Cubiertos biodegradables
-                    .productos__container--list--3.productos__container--list--envb--3
-                        hr.lineCategory
-                        a.productos__container--list--a--3(href="")
-                            img(src="images/icons/salsero_biodegradable.svg", alt="")
-                            p Salseros biodegradables
-                    .productos__container--list--4.productos__container--list--envb--4
-                        hr.lineCategory
-                        a.productos__container--list--a--4(href="")
-                            img(src="images/icons/bolsas_kraft.svg", alt="")
-                            p Bolsas de papel kraft
-                    .productos__container--list--5.productos__container--list--envb--5
-                        hr.lineCategory
-                        a.productos__container--list--a--5(href="")
-                            img(src="images/icons/plato_biodegradable.svg", alt="")
-                            p Platos biodegradables
-                    .productos__container--list--6.productos__container--list--envb--6
-                        hr.lineCategory
-                        a.productos__container--list--a--6(href="")
-                            img(src="images/icons/bandejas_descartable.svg", alt="")
-                            p Bandejas descartables
-                    .productos__container--list--7.productos__container--list--envb--7
-                        hr.lineCategory
-                        a.productos__container--list--a--7(href="")
-                            img(src="images/icons/sorbete_biodegradable.svg", alt="")
-                            p Sorbetes biodegradables
-                    .productos__container--list--8.productos__container--list--envb--8
-                        hr.lineCategory
-                        a.productos__container--list--a--8(href="")
-                            img(src="images/icons/vasos_bebida_fria.svg", alt="")
-                            p Vasos para bebidas frías
-                    .productos__container--list--9.productos__container--list--envb--9
-                        hr.lineCategory
-                        a.productos__container--list--a--9(href="")
-                            img(src="images/icons/vasos_bebida_caliente.svg", alt="")
-                            p Vasos para bebidas calientes
+                    +productsListCategory('productos__container--list--0 productos__container--list--envb--0', 'lineCategory  lineCategory--0', 'productos__container--list--a--0', 'envases-biodegradables.html', 'images/icons/envases_biodegradable.svg', 'Envases biodegradables', 'Envases biodegradables')
+                    +productsListCategory('productos__container--list--1 productos__container--list--envb--1', 'lineCategory', 'productos__container--list--a--1', 'bowls-bambu.html', 'images/icons/bowl_bambu.svg', 'Bowls de bambú', 'Bowls de bambú')
+                    +productsListCategory('productos__container--list--2 productos__container--list--envb--2', 'lineCategory', 'productos__container--list--a--2', 'cubiertos-biodegradables.html', 'images/icons/cubiertos_biodegradables.svg', 'Cubiertos biodegradables', 'Cubiertos biodegradables')
+                    +productsListCategory('productos__container--list--3 productos__container--list--envb--3', 'lineCategory', 'productos__container--list--a--3', 'salseros-biodegradables.html', 'images/icons/salsero_biodegradable.svg', 'Salseros biodegradables', 'Salseros biodegradables')
+                    +productsListCategory('productos__container--list--4 productos__container--list--envb--4', 'lineCategory', 'productos__container--list--a--4', 'bolsas-papel-kraft.html', 'images/icons/bolsas_kraft.svg', 'Bolsas de papel kraft', 'Bolsas de papel kraft')
+                    +productsListCategory('productos__container--list--5 productos__container--list--envb--5', 'lineCategory', 'productos__container--list--a--5', 'platos-biodegradables.html', 'images/icons/plato_biodegradable.svg', 'Platos biodegradables', 'Platos biodegradables')
+                    +productsListCategory('productos__container--list--6 productos__container--list--envb--6', 'lineCategory', 'productos__container--list--a--6', 'bandejas-descartables.html', 'images/icons/bandejas_descartable.svg', 'Bandejas descartables', 'Bandejas descartables')
+                    +productsListCategory('productos__container--list--7 productos__container--list--envb--7', 'lineCategory', 'productos__container--list--a--7', 'sorbetes-biodegradables.html', 'images/icons/sorbete_biodegradable.svg', 'Sorbetes biodegradables', 'Sorbetes biodegradables')
+                    +productsListCategory('productos__container--list--8 productos__container--list--envb--8', 'lineCategory', 'productos__container--list--a--8', 'vasos-bebida-fria.html', 'images/icons/vasos_bebida_fria.svg', 'Vasos para bebidas frías', 'Vasos para bebidas frías')
+                    +productsListCategory('productos__container--list--9 productos__container--list--envb--9', 'lineCategory', 'productos__container--list--a--9', 'vasos-bebida-caliente.html', 'images/icons/vasos_bebida_caliente.svg', 'Vasos para bebidas calientes', 'Vasos para bebidas calientes')
             .productos__container--products
                 .productos__container--products--description
                     img(src="", alt="")
