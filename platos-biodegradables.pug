@@ -1,0 +1,47 @@
+include configurations.pug
+include mixins.pug
+doctype doctype html
+html(lang="en")
+    include templates/head.pug
+        title Platos biodegradables
+        include templates/script.pug
+    body 
+        //-Social Buttom (personal) start here
+        include templates/social-buttom.pug
+        //-Social Buttom (personal) end here
+        //-Header start here
+        include templates/header.pug
+        //-Header end here
+        //-Main start here
+        .productos__container
+            .productos__container--list
+                .productos__container--list--title
+                    h2 CATEGORIAS
+                .productos__container--list--m
+                    +productsListCategory('productos__container--list--0 productos__container--list--plbio--0', 'lineCategory', 'productos__container--list--a--0', 'envases-biodegradables.html', 'images/icons/envases_biodegradable.svg', 'Envases biodegradables', 'Envases biodegradables')
+                    +productsListCategory('productos__container--list--1 productos__container--list--plbio--1', 'lineCategory', 'productos__container--list--a--1', 'bowls-bambu.html', 'images/icons/bowl_bambu.svg', 'Bowls de bambú', 'Bowls de bambú')
+                    +productsListCategory('productos__container--list--2 productos__container--list--plbio--2', 'lineCategory', 'productos__container--list--a--2', '', 'images/icons/cubiertos_biodegradables.svg', 'Cubiertos biodegradables', 'Cubiertos biodegradables')
+                    +productsListCategory('productos__container--list--3 productos__container--list--plbio--3', 'lineCategory', 'productos__container--list--a--3', '', 'images/icons/salsero_biodegradable.svg', 'Salseros biodegradables', 'Salseros biodegradables')
+                    +productsListCategory('productos__container--list--4 productos__container--list--plbio--4', 'lineCategory', 'productos__container--list--a--4', '', 'images/icons/bolsas_kraft.svg', 'Bolsas de papel kraft', 'Bolsas de papel kraft')
+                    +productsListCategory('productos__container--list--5 productos__container--list--plbio--5', 'lineCategory lineCategory--5', 'productos__container--list--a--5', 'platos-biodegradables.html', 'images/icons/plato_biodegradable.svg', 'Platos biodegradables', 'Platos biodegradables')
+                    +productsListCategory('productos__container--list--6 productos__container--list--plbio--6', 'lineCategory', 'productos__container--list--a--6', '', 'images/icons/bandejas_descartable.svg', 'Bandejas descartables', 'Bandejas descartables')
+                    +productsListCategory('productos__container--list--7 productos__container--list--plbio--7', 'lineCategory', 'productos__container--list--a--7', '', 'images/icons/sorbete_biodegradable.svg', 'Sorbetes biodegradables', 'Sorbetes biodegradables')
+                    +productsListCategory('productos__container--list--8 productos__container--list--plbio--8', 'lineCategory', 'productos__container--list--a--8', '', 'images/icons/vasos_bebida_fria.svg', 'Vasos para bebidas frías', 'Vasos para bebidas frías')
+                    +productsListCategory('productos__container--list--9 productos__container--list--plbio--9', 'lineCategory', 'productos__container--list--a--9', '', 'images/icons/vasos_bebida_caliente.svg', 'Vasos para bebidas calientes', 'Vasos para bebidas calientes')
+            .productos__container--products
+                .productos__container--products--description
+                    img(src="", alt="")
+                    .productos__container--products--description--text
+                        h2 Envases biodegradables
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit doloribus, aliquam voluptas sit nesciunt ipsa dolorem laborum quisquam voluptate maxime! Neque aut nam illo rerum sequi unde architecto deleniti ea.
+                .productos__container--products--description__container
+                    .productos__container--products--description__container-t
+                        h2 Envases biodegradables
+                        p Envases blancos de doble pared nuevos a estrenar. Elegante por excelencia. Clásicos modernos.
+                    .productos__container--products--description__container-l
+                        +productsList('products__list--plbio0', 'images/productos/envases_biodegradables/EP001.png', 'Cientos de platos descartables biodegradables de 15cm', 'CODE: EP-15', 'Stock disponible', 'products__list--p-b__plbio0', 'S/. 33.50')
+                        hr.line.line__products--list
+                        +productsList('products__list--plbio1', 'images/productos/envases_biodegradables/EP001.png', 'Cientos de platos descartables biodegradables de 18cm', 'CODE: EP-18', 'Stock disponible', 'products__list--p-b__plbio1', 'S/. 44.25')
+                        hr.line.line__products--list
+                        +productsList('products__list--plbio2', 'images/productos/envases_biodegradables/EP001.png', 'Cientos de platos descartables biodegradables de 20cm', 'CODE: EP-20', 'Stock disponible', 'products__list--p-b__plbio2', 'S/. 55.00')
+        //-Main end here

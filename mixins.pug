@@ -4,14 +4,14 @@ mixin productsCategory(categoryContainer ,list, linkTo, imgSrc, imgAlt, title)
         a(class= list href= LinkTo)
             img(src= imgSrc, alt= imgAlt)
             p= title
-
 mixin productsList(nameDivProductList, imageDirection, title, code, stock, nameDivProductListContainer, price)
                 div(class= nameDivProductList)
                     .products__list--img
                         img(src=imageDirection, alt="")
                     .products__list--text
-                        h4= title
-                        p= code
+                        a(href=" ")
+                            h4= title
+                            p= code
                         .products__list--text--stock
                             i.fa-solid.fa-circle-check 
                             p= stock
@@ -21,3 +21,10 @@ mixin productsList(nameDivProductList, imageDirection, title, code, stock, nameD
                         .products__list--button
                             a(href="")
                                 i.fa-solid.fa-arrow-right
+mixin productsListCategory(nameClassDiv, nameClassHr, nameClassA, dirHref, imgSrc, imgAlt, nameP)
+    div(class= nameClassDiv)
+        hr(class= nameClassHr)
+        a(class= nameClassA href= dirHref)
+            img(src= imgSrc, alt= imgAlt)
+            p= nameP
+            
