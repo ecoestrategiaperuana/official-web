@@ -3,7 +3,7 @@ include mixins.pug
 doctype html
 html(lang="en")
     include templates/head.pug
-        title Envases biodegradables
+        title Bowls de bambú
         include templates/script.pug
     body
         //-Social Buttom (personal) start here
@@ -18,52 +18,52 @@ html(lang="en")
                 .productos__container--list--title
                     h2 Categorias
                 .productos__container--list--m
-                    .productos__container--list--0.productos__container--list--envb--0
-                        hr.lineCategory.lineCategory--0
+                    .productos__container--list--0.productos__container--list--bwl--0
+                        hr.lineCategory
                         a.productos__container--list--a--0(href="envases-biodegradables.html")
                             img(src="images/icons/envases_biodegradable.svg", alt="envases biodegradables")
                             p Envases biodegradables
-                    .productos__container--list--1.productos__container--list--envb--1
-                        hr.lineCategory
+                    .productos__container--list--1.productos__container--list--bwl--1
+                        hr.lineCategory.lineCategory--1
                         a.productos__container--list--a--1(href="")
                             img(src="images/icons/bowl_bambu.svg", alt="")
                             p Bowls de bambú
-                    .productos__container--list--2.productos__container--list--envb--2
+                    .productos__container--list--2.productos__container--list--bwl--2
                         hr.lineCategory
                         a.productos__container--list--a--2(href="")
                             img(src="images/icons/cubiertos_biodegradables.svg", alt="")
                             p Cubiertos biodegradables
-                    .productos__container--list--3.productos__container--list--envb--3
+                    .productos__container--list--3.productos__container--list--bwl--3
                         hr.lineCategory
                         a.productos__container--list--a--3(href="")
                             img(src="images/icons/salsero_biodegradable.svg", alt="")
                             p Salseros biodegradables
-                    .productos__container--list--4.productos__container--list--envb--4
+                    .productos__container--list--4.productos__container--list--bwl--4
                         hr.lineCategory
                         a.productos__container--list--a--4(href="")
                             img(src="images/icons/bolsas_kraft.svg", alt="")
                             p Bolsas de papel kraft
-                    .productos__container--list--5.productos__container--list--envb--5
+                    .productos__container--list--5.productos__container--list--bwl--5
                         hr.lineCategory
                         a.productos__container--list--a--5(href="")
                             img(src="images/icons/plato_biodegradable.svg", alt="")
                             p Platos biodegradables
-                    .productos__container--list--6.productos__container--list--envb--6
+                    .productos__container--list--6.productos__container--list--bwl--6
                         hr.lineCategory
                         a.productos__container--list--a--6(href="")
                             img(src="images/icons/bandejas_descartable.svg", alt="")
                             p Bandejas descartables
-                    .productos__container--list--7.productos__container--list--envb--7
+                    .productos__container--list--7.productos__container--list--bwl--7
                         hr.lineCategory
                         a.productos__container--list--a--7(href="")
                             img(src="images/icons/sorbete_biodegradable.svg", alt="")
                             p Sorbetes biodegradables
-                    .productos__container--list--8.productos__container--list--envb--8
+                    .productos__container--list--8.productos__container--list--bwl--8
                         hr.lineCategory
                         a.productos__container--list--a--8(href="")
                             img(src="images/icons/vasos_bebida_fria.svg", alt="")
                             p Vasos para bebidas frías
-                    .productos__container--list--9.productos__container--list--envb--9
+                    .productos__container--list--9.productos__container--list--bwl--9
                         hr.lineCategory
                         a.productos__container--list--a--9(href="")
                             img(src="images/icons/vasos_bebida_caliente.svg", alt="")
@@ -72,21 +72,27 @@ html(lang="en")
                 .productos__container--products--description
                     img(src="", alt="")
                     .productos__container--products--description--text
-                        h2 Envases biodegradables
+                        h2 Bowls de bambú
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit doloribus, aliquam voluptas sit nesciunt ipsa dolorem laborum quisquam voluptate maxime! Neque aut nam illo rerum sequi unde architecto deleniti ea.
                 .productos__container--products--description__container
                     .productos__container--products--description__container-t
-                        h2 Envases biodegradables
-                        p Envases blancos de doble pared nuevos a estrenar. Elegante por excelencia. Clásicos modernos.
+                        h2 Bowls de bambú
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit doloribus, aliquam voluptas
                     .productos__container--products--description__container-l
-                        +productsList('products__list--envb1', 'images/productos/envases_biodegradables/EP001.png', 'Envases biodegradables de caña de azúcar CT4', 'CODE: EP003', 'Stock disponible', 'products__list--p-b__envb1', 'S/. 66.67')
+                        +productsList('products__list--bwl0', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú sopero biodegradable 8oz', 'CODE: EP-S8', 'Stock disponible', 'products__list--p-b__bwl0', 'S/. 111.42')
                         hr.line.line__products--list
-                        +productsList('products__list--envb2', 'images/productos/envases_biodegradables/EP001.png', 'Envases biodegradables de caña de azúcar CT5', 'CODE: EP06', 'Stock disponible', 'products__list--p-b__envb2', 'S/. 97.12')
+                        +productsList('products__list--bwl1', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú sopero biodegradable 16oz', 'CODE: EP-S16', 'Stock disponible', 'products__list--p-b__bwl1', 'S/. 124.28')
                         hr.line.line__products--list
-                        +productsList('products__list--envb3', 'images/productos/envases_biodegradables/EP001.png', 'Envases biodegradables de caña de azúcar CT6', 'CODE: EP09', 'Stock disponible', 'products__list--p-b__envb3', 'S/. 125.90')
+                        +productsList('products__list--bwl2', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú sopero biodegradable 32oz', 'CODE: EP-S32', 'Stock disponible', 'products__list--p-b__bwl2', 'S/. 156.50')
                         hr.line.line__products--list
-                        +productsList('products__list--envb4', 'images/productos/envases_biodegradables/EP001.png', 'Envases biodegradables de caña de azúcar para ensaladas', 'CODE: EP001', 'Stock disponible', 'products__list--p-b__envb4', 'S/. 70.44')
+                        +productsList('products__list--bwl3', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 330ml', 'CODE: EP-330', 'Stock disponible', 'products__list--p-b__bwl3', 'S/. 107.28')
                         hr.line.line__products--list
-                        +productsList('products__list--envb5', 'images/productos/envases_biodegradables/EP001.png', 'Envases biodegradables de caña de azúcar CT1', 'CODE: EP10', 'Stock disponible', 'products__list--p-b__envb5', 'S/. 129.14')
-        //-include templates/producto-list.pug
-        //-Main end here
+                        +productsList('products__list--bwl4', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 500ml', 'CODE: EP-500', 'Stock disponible', 'products__list--p-b__bwl4', 'S/. 126.42')
+                        hr.line.line__products--list
+                        +productsList('products__list--bwl5', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 600ml', 'CODE: EP-600', 'Stock disponible', 'products__list--p-b__bwl5', 'S/. 127.49')
+                        hr.line.line__products--list
+                        +productsList('products__list--bwl6', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 750ml', 'CODE: EP-750', 'Stock disponible', 'products__list--p-b__bwl6', 'S/. 131.88')
+                        hr.line.line__products--list
+                        +productsList('products__list--bwl7', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 1000ml', 'CODE: EP-1000', 'Stock disponible', 'products__list--p-b__bwl7', 'S/. 122.07')
+                        hr.line.line__products--list
+                        +productsList('products__list--bwl8', 'images/productos/envases_biodegradables/EP001.png', 'Bowl de bambú biodegradable 1300ml', 'CODE: EP-1300', 'Stock disponible', 'products__list--p-b__bwl8', 'S/. 154.09')

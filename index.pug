@@ -22,7 +22,227 @@ html(lang="en")
         include templates/header.pug
         //-Header end here
         //-Main start here
+        main
+            #h--1
+                #b--i 
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                        .swiper-button-next-i-b
+                        .swiper-button-prev
+            #h--2
+                #b--i--2
+                    .why--our__i
+                        .why__our__i__text-p
+                            h2 ¿Porqué elegir Ecoestrategia Peruana?
+                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maiores illum minus aspernatur corporis corrupti accusamus eligendi fugiat, mollitia quasi vero soluta nobis in quibusdam ut beatae repudiandae rem debitis?
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia assumenda omnis rem harum, dolorem asperiores esse reiciendis reprehenderit, nesciunt saepe maiores exercitationem minima facilis repudiandae vero laborum est. Aperiam, illum?
+                        .why--our__i__container
+                            .why--our__i__cards.why--our__ir__cards--1
+                                .w--o__i__c__img
+                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+                            .why--our__i__cards.why--our__ir__cards--2
+                                .w--o__i__c__img
+                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+                            .why--our__i__cards.why--our__ir__cards--3
+                                .w--o__i__c__img
+                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+            #h--i--3
+                #b--1--3
+                    .customize__i
+                        .customize__i--title
+                        .customize__i--container
+                            .customize__i--img: img(src="", alt="")
+                            .customize__i--text
+                                h2 Personaliza tu logo
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae inventore sit molestiae sint facere quos natus ratione, corrupti ex nemo! Enim officia tempora ducimus nemo impedit laudantium repudiandae aperiam quam.
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sapiente labore aperiam sed a veritatis harum neque voluptates provident minus similique dolorum voluptate, ipsum voluptatum magni dolore libero consequuntur. Earum.
+            #h--i--4
+                #h--1--4 
+                    .notice__i
+                        .notice__i--title
+                        .notice__i--container
+                            .notice__i--text
+                                h2 Noticias Ecoestrategia Peruana
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae inventore sit molestiae sint facere quos natus ratione, corrupti ex nemo! Enim officia tempora ducimus nemo impedit laudantium repudiandae aperiam quam.
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sapiente labore aperiam sed a veritatis harum neque voluptates provident minus similique dolorum voluptate, ipsum voluptatum magni dolore libero consequuntur. Earum.
+                            .notice__i--img: img(src="", alt="")
         //-Main end here
+        //-Testimonials section starts here
+        section.testimonials.testimonials--space
+            h2.testimonials--title Lo que dicen de nuestros envases biodegradables
+            p.testimonials--text >Nuestra mejor carta de presentación son nuestros clientes. Ellos confiaron en nuestros Empaques Descartables Ecológicos.
+            .testimonials__container
+                button.testimonials__container--previous(aria-label="Anterior")
+                    img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-left.svg",
+                    alt="Icono de Flecha Izquierda para retroceder al Anterior")
+                .testimonials__container--carousel
+                    //- Slide 1
+                    .testimonials__container--carousel--slide
+                        picture
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/denis-wilmer.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/denis-wilmer.webp",
+                            alt="Imagen de Nuestro Cliente Denis Wilmer Días, Jefe de Compras")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--one Me ayudarón a mejorar la presentación de mi delivery, cambiando envases de Tecnopor que son dañino para nuestros clientes con Envases Biodegradables.
+                            p.testimonials__container--carousel--slide--name Denis Wilmer Díaz
+                            p.testimonials__container--carousel--slide--charge Jefe de Compras
+                    //- Slide 2
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/sergio-bronstein.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/sergio-bronstein.webp",
+                            alt="Imagen de Nuestro Cliente Sergio Bronstein, Gerente Comercial")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--two Utilizo sus tapers biodegradables en diferentes platos de mi restaurant. La calidad del envase es muy buena y tiene una tapa hermética en la cual no se filtra líquido.
+                            p.testimonials__container--carousel--slide--name Sergio Bronstein
+                            p.testimonials__container--carousel--slide--charge Gerente Comercial
+                    //- Slide 3
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/indira-valeska.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/indira-valeska.webp",
+                            alt="Imagen de Nuestra Cliente Indira Valeska, Evaluadora de Proveedores")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--three Sus envíos son a tiempo y tienen variedad de productos. Personalmente compro los envases de caña de azúcar y sus empaques tienen muy buena estructura.
+                            p.testimonials__container--carousel--slide--name Indira Valeska
+                            p.testimonials__container--carousel--slide--charge Evaluadora de Proveedores
+                    //- Slide 4
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/maris-mendoza.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/maris-mendoza.webp",
+                            alt="Imagen de Nuestro Clienta Maris Mendoza, Emprendedora")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--four Ahora mis postres realizados en casa los envío en Empaques y Envases Biodegradables, así mis clientes no contaminan el medio ambiente.
+                            p.testimonials__container--carousel--slide--name Maris Mendoza
+                            p.testimonials__container--carousel--slide--charge Emprendedora
+                    //- Slide 5
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/juan-pablo-mansilla.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/juan-pablo-mansilla.webp",
+                            alt="Imagen de Nuestro Cliente Juan Pablo Mansilla, Administrador")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--five Lo mejor de Eco Estrategia Peruana es que es una empresa muy comprometida con sus clientes, no tardan en las entregas y tienen muy buenos precios.
+                            p.testimonials__container--carousel--slide--name Juan Pablo Mansilla
+                            p.testimonials__container--carousel--slide--charge Administrador
+                    //- Slide 6
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/nancy-zegarra.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/nancy-zegarra.webp",
+                            alt="Imagen de Nuestro Clienta Nancy Zegarra, Gerenta de Logística")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star  
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--six Son muy proactivos y tienen buenos precios. Antes utilizabamos envases de otro proveedor, pero sus envases ecológicos son más gruesos y resistentes.
+                            p.testimonials__container--carousel--slide--name Nancy Zegarra
+                            p.testimonials__container--carousel--slide--charge Gerenta de Logística
+                    //- Slide 7
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/alex-bicmer.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/alex-bicmer.webp",
+                            alt="Imagen de Nuestro Cliente Alex Bicmer, Emprendedor")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star  
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--seven Antes de cambiarme de envases plásticos a Biodegradables, vi muchas alternativas, escogí a Eco Estrategia Peruana por sus precios y la calidad de sus productos.
+                            p.testimonials__container--carousel--slide--name Alex Bicmer
+                            p.testimonials__container--carousel--slide--charge Emprendedor
+                    //- Slide 8
+                    .testimonials__container--carousel--slide
+                        picture 
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/jose-torres.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/jose-torres.webp",
+                            alt="Imagen de Nuestro Cliente José Torres, Emprendedor")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star 
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--eight Yo revendo sus productos biodegradables en provincia. Me dan buenos precios y facilidades para realizar mis pedidos.
+                            p.testimonials__container--carousel--slide--name José Torres
+                            p.testimonials__container--carousel--slide--charge Emprendedor
+                    //- Slide 9
+                    .testimonials__container--carousel--slide
+                        picture
+                            source(media="(max-width: 425px)",
+                            srcset="../images/landings/contenedores/mobile/omar-armando-moreno.webp")
+                            img(loading="lazy", src="../images/landings/contenedores/desktop/omar-armando-moreno.webp",
+                            alt="Imagen de Nuestro Cliente Omar Armando Moreno, Dueño de Restaurant")
+                        .lazy.star-t
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star 
+                        .testimonials__c--p
+                            p.testimonials__container--carousel--slide--testimonial.testimonials__container--carousel--slide--nine Sus tapers descartables para comida son muy resistentes y la apreciación por parte de mis clientes de sus productos es muy buena.
+                            p.testimonials__container--carousel--slide--name Omar Armando Moreno
+                            p.testimonials__container--carousel--slide--charge Dueño de Restaurant
+                button.testimonials__container--after(aria-label="Siguiente")
+                    img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-right.svg",
+                    alt="Icono de Flecha Derecha para avanzar al Siguiente")
+                .testimonials__indicators(role="tablist")
+        //-Testimonials section ends here
+        //-Footer starts here
+        include templates/footer.pug
+        //-Footer ends here
         script(src="js/slider/swiper-i-b.min.js")
         //-script(async src="js/swiper.js")
         //-script(async src="js/popUp.js")
