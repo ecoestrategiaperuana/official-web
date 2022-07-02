@@ -1978,7 +1978,9 @@ li {
 .productos__container--list--cbtbio--2,
 .productos__container--list--slsbio--3,
 .productos__container--list--bpkraft--4,
-.productos__container--list--bdjdesc--6 {
+.productos__container--list--bdjdesc--6,
+.productos__container--list--sbtbio--7
+    {
     background-color: var(--fourth-color);
 }
 
@@ -2127,7 +2129,14 @@ li {
 .products__list--bdjdesc3,
 .products__list--bdjdesc4,
 .products__list--bdjdesc5,
-.products__list--bdjdesc6 {
+.products__list--bdjdesc6,
+.products__list--sbtbio0,
+.products__list--sbtbio1,
+.products__list--sbtbio2,
+.products__list--sbtbio3,
+.products__list--sbtbio4,
+.products__list--sbtbio5,
+.products__list--sbtbio6 {
     /*
     display: flex;
     flex-direction: row;
@@ -2272,7 +2281,14 @@ li {
 .products__list--p-b__bdjdesc3,
 .products__list--p-b__bdjdesc4,
 .products__list--p-b__bdjdesc5,
-.products__list--p-b__bdjdesc6 {
+.products__list--p-b__bdjdesc6,
+.products__list--p-b__sbtbio0,
+.products__list--p-b__sbtbio1,
+.products__list--p-b__sbtbio2,
+.products__list--p-b__sbtbio3,
+.products__list--p-b__sbtbio4,
+.products__list--p-b__sbtbio5,
+.products__list--p-b__sbtbio6 {
     display: flex;
     flex-direction: row;
     gap: 2.4rem;
