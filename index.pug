@@ -7,6 +7,7 @@ html(lang="en")
         script(async src="js/mobile.js") 
         script(async src="js/product.js")
         script(src="js/reutilizables.js")
+        link(rel="shortcut icon", href="images/logo/Icono_Eco_Estrategía_Peruana.png")
         link(rel="stylesheet", href="css/slider/swiper-i-b.min.css")
         
         include templates/script.pug
@@ -25,9 +26,24 @@ html(lang="en")
         main
             #h--1
                 #b--i 
-                    .swiper.mySwiper
+                    .main__web__background
+                        img(src="images/banner/Envases_Biodegradables_Eco_estrategia_peruana_Web.png", alt="")
+                        .main__web__background--text 
+                            .main__web__background--text--1
+                                img(src="images/logo/Icono_Eco_Estrategía_Peruana.png", alt="Logo de Eco Estrategia Peruana")
+                                h3 Descuentos especiales por tu primera compra
+                            .main__web__background--text--2
+                                h2 Envases Biodegradables de Caña de Azúcar para Alimentos en Perú
+                                p Cotiza nuestros Empaques y Envases Biodegradables para Alimentos en Perú. Descubre los mejores Tapers Descartables Ecológicos de Caña de Azúcar al mejor precio
+                            .main__web__background--text--3
+                                h3 Solicitar  cotización
+                            .main__web__background--text--4 
+                                i.fa-solid.fa-truck
+                                h3 Despacho inmediato y gratuito a partir de S/. 300
+                            .main__web__background--text--5
+                    //-.swiper.mySwiper
                         .swiper-wrapper
-                            .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
+                            .swiper-slide: img(src="images/banner/Envases_Biodegradables_Eco_estrategia_peruana_Web.png", alt="")
                             .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
                             .swiper-slide: img(src="images/banner/banner_producto.png", alt="")
                             .swiper-slide: img(src="images/banner/banner_producto.png", alt="")

@@ -1307,12 +1307,12 @@ li {
     overflow: hidden;
 }
 
-/* Index */
+/* TODO Main Index */
 #h--i,
 #b--i {
-    position: relative;
-    height: 100%;
-    margin-top: 6rem;
+    /*position: relative;
+    height: 100%;*/
+    height: 42rem;
 }
 
 #b--i {
@@ -1356,6 +1356,54 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.main__web__background--text {
+    color: var(--primary-color);
+    position: relative;
+    bottom: 18rem;
+    margin-left: 4rem;
+    width: 38rem;
+    top: -24rem;
+}
+
+.main__web__background--text--1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.main__web__background--text--1 h3 {
+    font-weight: 500;
+}
+
+.main__web__background--text--1 img {
+    width: 1rem;
+}
+
+.main__web__background--text--2 h2 {
+    font-family: var(--principal-font);
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.main__web__background--text--2 p {
+    color: var(--fifth-color);
+}
+
+.main__web__background--text--3 {
+    background-color: var(--primary-color);
+    width: 10rem;
+    color: #fff;
+    border-radius: 1px;
+}
+
+.main__web__background--text--4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
 }
 
 /* why our index start here */
