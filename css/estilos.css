@@ -369,6 +369,7 @@ li {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999;
 }
 
 .cperson a,
@@ -441,8 +442,10 @@ li {
 }*/
 
 .m-width-1460 {
-    max-width: 1460px;
-    margin: 0 auto;
+    /*max-width: 1460px;
+    margin: 0 auto;*/
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .banner__img {
@@ -454,10 +457,11 @@ li {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 2fr 1.9fr;
+    /*grid-template-columns: 2fr 1.9fr;*/
+    grid-template-columns: 3fr 1fr;
     gap: 1rem;
     margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0rem;
 }
 
 .h__logo--left img {
@@ -523,6 +527,10 @@ li {
 .tel--date a,
 .mail--date a {
     color: var(--third-color);
+}
+
+.h__logo--right {
+    width: 200px;
 }
 
 .h__logo--right img {
@@ -1441,7 +1449,9 @@ li {
 
 .why__our__i__text-p {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .why--our__i h2 {
@@ -1451,8 +1461,11 @@ li {
 }
 
 .why__our__i__text-p p {
-    font-size: 14pt;
+    font-size: 12.3pt;
+}
 
+.why__our__i__text-p--1 {
+    margin-bottom: 1rem;
 }
 
 .why--our__i__container {
@@ -1476,21 +1489,43 @@ li {
     display: grid;
 }
 
+.why--our__i__cards h4 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
 .w--o__i__c__img {
     width: 7rem;
     height: 7rem;
     object-fit: cover;
     position: relative;
     left: 7.7rem;
+    top: 0.5rem;
 }
 
 .w--o__i__c__text {
     /*color: var(--secondary-color);*/
-    font-size: 12pt;
+    font-size: 11pt;
     font-family: var(--text-font);
     text-align: center;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+.w--o__i__c__caction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    font-size: 11pt;
+    color: var(--primary-color);
+    font-family: var(--title-font);
+}
+
+.w--o__i__c__caction a {
+    color: var(--primary-color);
 }
 
 /* why our index end here */
@@ -1499,6 +1534,7 @@ li {
 /* customize brand index start */
 #h--i--3 {
     height: 450px;
+    margin-bottom: 3rem;
 }
 
 .customize__i--container {
@@ -1511,18 +1547,37 @@ li {
 .customize__i--img {
     width: 600px;
     height: 400px;
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
     margin-bottom: 1rem;
 }
 
 .customize__i--text {
-    font-family: var(--principal-font);
+    font-family: var(--text-font);
+    position: relative;
+    top: 2.5rem;
 }
 
 .customize__i--text h2 {
     text-align: center;
     font-size: 24pt;
     font-weight: 600;
+    font-family: var(--title-font);
+}
+
+.customize__i--caction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14pt;
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    margin-top: 2rem;
+}
+
+.customize__i--caction a {
+    color: var(--primary-color);
 }
 
 /* customize brand index end */
@@ -1530,6 +1585,7 @@ li {
 /* notice index start */
 #h--i--4 {
     height: 450px;
+    margin-bottom: 2rem;
 }
 
 .notice__i--container {
@@ -1547,15 +1603,33 @@ li {
 }
 
 .notice__i--text {
-    font-family: var(--principal-font);
+    font-family: var(--text-font);
+    position: relative;
+    top: 2.5rem;
 }
 
 .notice__i--text h2 {
     text-align: center;
     font-size: 24pt;
     font-weight: 600;
+    font-family: var(--title-font);
 }
 
+.notice__i--caction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14pt;
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    margin-top: 2rem;
+}
+
+.notice__i--caction a {
+    color: var(--primary-color);
+}
 /* notice index end */
 
 /* Testimonials start here*/

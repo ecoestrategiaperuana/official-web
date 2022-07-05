@@ -9,7 +9,18 @@ html(lang="en")
         script(src="js/reutilizables.js")
         link(rel="stylesheet", href="css/slider/swiper-i-b.min.css")
         
-        include templates/script.pug
+        //-include templates/script.pug
+        script(type="application/ld+json").
+            {
+                "@context": "https://schema.org",
+                "@type": "ImageObject",
+                "author": "Ecoestrategia Peruana",
+                "contentLocation": "Lima, Perú",
+                "contentUrl": "images/banner/EnvasesBiodegradablesEcoEstrategiaPeruanaOficial.png",
+                "datePublished": "2022-07-05",
+                "description": "Banner de productos de los mejores envases biodegradables de Perú",
+                "name": "Banner de envases biodegradables"
+            }
     body
         //- Google tag manager start here (noscript)
         noscript
@@ -26,7 +37,7 @@ html(lang="en")
             #h--1
                 #b--i 
                     .main__web__background
-                        img(src="images/banner/EnvasesBiodegradablesEcoEstrategiaPeruanaOficial.png", alt="")
+                        img(src="images/banner/EnvasesBiodegradablesEcoEstrategiaPeruanaOficial.png", alt=" Banner envases biodegradables peru")
                         .main__web__background--text 
                             .main__web__background--text--1
                                 h2 Envases Biodegradables de Caña de Azúcar para Alimentos en Perú
@@ -55,31 +66,46 @@ html(lang="en")
                     .why--our__i
                         .why__our__i__text-p
                             h2 ¿Por qué elegir Ecoestrategia Peruana?
-                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maiores illum minus aspernatur corporis corrupti accusamus eligendi fugiat, mollitia quasi vero soluta nobis in quibusdam ut beatae repudiandae rem debitis?
-                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia assumenda omnis rem harum, dolorem asperiores esse reiciendis reprehenderit, nesciunt saepe maiores exercitationem minima facilis repudiandae vero laborum est. Aperiam, illum?
+                            p(class="why__our__i__text-p--1") Elegir Ecoestrategia peruana, es elegir confianza en tu empaque, calidad de servicio, puntualidad en entregas, continuidad de stock y variedad de soluciones ecológicas para tus necesidades. Nuestros envases descartables biodegradables, reciclables y compostables se adaptan al presupuesto de nuestros clientes. Con la finalidad de impulsar un delivery ecológico en la mayor cantidad de empresas peruanas, sin elevar presupuestos y mejorando la experiencia de sus clientes.
+                            p(class="why__our__i__text-p--2") Nuestros despachos de pedidos son a Nivel nacional, contamos con logística propia, almacén para despacho inmediato, stock todo el año, un área especial para venta mayorista y otra para orientarte a elegir los productos idóneos para tu restaurante, hotel o cafetería. Nosotros somos el socio estratégico que necesitas, cotiza, llámanos o solicita tus muestras gratis.
                         .why--our__i__container
                             .why--our__i__cards.why--our__ir__cards--1
                                 .w--o__i__c__img
-                                    img(src="images/icons/Iconos_Web-17.svg", alt="")
-                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+                                    img(src="images/icons/fabrica_eco.svg", alt="Fabricación ecológica")
+                                h4 Fabricación
+                                p.w--o__i__c__text ¡No solo envases de caña! Contamos con más de 70 productos productos hecho de materiales, renovables, con menos carbono, reciclables y recuperables. 
+                                .w--o__i__c__caction
+                                    a(href="")  ¿Quieres saber más?
+                                    i.fa-solid.fa-arrow-right
                             .why--our__i__cards.why--our__ir__cards--2
                                 .w--o__i__c__img
-                                    img(src="images/icons/Iconos_Web-14.svg", alt="")
-                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+                                    img(src="images/icons/soporte_support.svg", alt="Soporte de calidad")
+                                h4 Soporte sin igual
+                                p.w--o__i__c__text A través de nuestras redes sociales entérate de nuestra reposición de stock, promociones, packs de productos, descuentos y más.
+                                .w--o__i__c__caction
+                                    a(href="")  ¿Quieres saber más?
+                                    i.fa-solid.fa-arrow-right
                             .why--our__i__cards.why--our__ir__cards--3
                                 .w--o__i__c__img
-                                    img(src="images/icons/Iconos_Web-18.svg", alt="")
-                                p.w--o__i__c__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit ullam facilis distinctio nulla vel incidunt, modi laboriosam sequi tenetur magnam et similique voluptate nemo pariatur sapiente recusandae quos ut?
+                                    img(src="images/icons/certificaciones_eco.svg", alt="Certificaciones ecológicas")
+                                h4 Certificaciones
+                                p.w--o__i__c__text Contamos con certificaciones de todos nuestros productos, que garantizan los materiales de su fabricación y el contacto directo del producto con alimentos. 
+                                .w--o__i__c__caction
+                                    a(href="")  ¿Quieres saber más?
+                                    i.fa-solid.fa-arrow-right
             #h--i--3
                 #b--1--3
                     .customize__i
                         .customize__i--title
                         .customize__i--container
-                            .customize__i--img: img(src="", alt="")
+                            .customize__i--img: img(src="images/web_s/Personalizar_Logo_Imagen.png", alt="")
                             .customize__i--text
                                 h2 Personaliza tu logo
                                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae inventore sit molestiae sint facere quos natus ratione, corrupti ex nemo! Enim officia tempora ducimus nemo impedit laudantium repudiandae aperiam quam.
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sapiente labore aperiam sed a veritatis harum neque voluptates provident minus similique dolorum voluptate, ipsum voluptatum magni dolore libero consequuntur. Earum.
+                                .customize__i--caction
+                                    a(href="")  ¿Quieres saber más?
+                                    i.fa-solid.fa-arrow-right
             #h--i--4
                 #h--1--4 
                     .notice__i
@@ -89,7 +115,10 @@ html(lang="en")
                                 h2 Noticias Ecoestrategia Peruana
                                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae inventore sit molestiae sint facere quos natus ratione, corrupti ex nemo! Enim officia tempora ducimus nemo impedit laudantium repudiandae aperiam quam.
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sapiente labore aperiam sed a veritatis harum neque voluptates provident minus similique dolorum voluptate, ipsum voluptatum magni dolore libero consequuntur. Earum.
-                            .notice__i--img: img(src="", alt="")
+                                .notice__i--caction
+                                    a(href="")  ¿Quieres saber más?
+                                    i.fa-solid.fa-arrow-right
+                            .notice__i--img: img(src="images/noticias/1280/beneficios-de-los-envases-biodegradables.png", alt="")
         //-Main end here
         //-Testimonials section starts here
         section.testimonials.testimonials--space
