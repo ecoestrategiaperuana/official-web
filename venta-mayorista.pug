@@ -1,0 +1,20 @@
+include configurations.pug
+include mixins.pug
+doctype doctype html
+html(lang="en")
+    include templates/head.pug
+        title Bandejas descartables
+        include templates/script.pug
+    body 
+        //-Social Buttom (personal) start here
+        include templates/social-buttom.pug
+        //-Social Buttom (personal) end here
+        //-Header start here
+        include templates/header.pug
+        //-Header end here
+        //-Main start here
+        main
+            .vm--0 
+                .vm__container--0
+                    a(href="") Contactenos 
+                    a(href="venta-mayorista.html") Venta mayorista

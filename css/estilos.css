@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 @import url("https:///fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 *,
 ::after,
@@ -16,6 +18,8 @@
     --third-color: #808080;
     --fourth-color: #e9eaeb;
     --fifth-color: #707070;
+    --title-font: 'Poppins', sans-serif;
+    --text-font: 'Lora', serif;
     --principal-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --secondary-font: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
     --surface-color: #fff;
@@ -421,6 +425,7 @@ li {
 
 /* Social botton end here */
 
+/* TODO Header start here */
 .header {
     position: fixed;
     background-color: var(--secondary-color);
@@ -549,7 +554,7 @@ li {
 
 .h__container--menu li {
     margin-top: 1rem;
-    width: 100px;
+    /*width: 100px;*/
     height: 70px;
 }
 
@@ -1307,17 +1312,17 @@ li {
     overflow: hidden;
 }
 
-/* Index */
+/* TODO Main Index */
 #h--i,
 #b--i {
-    position: relative;
-    height: 100%;
-    margin-top: 6rem;
+    /*position: relative;
+    height: 100%;*/
+    height: 42rem;
+    font-family: var(--text-font);
 }
 
 #b--i {
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -1358,6 +1363,70 @@ li {
     object-fit: cover;
 }
 
+.main__web__background--text {
+    color: var(--primary-color);
+    position: relative;
+    bottom: 18rem;
+    margin-left: 2.9rem;
+    width: 40rem;
+    top: -30rem;
+}
+
+.main__web__background--text--1 h2 {
+    font-family: var(--title-font);
+    font-size: 27pt;
+    font-weight: 700;
+}
+
+.main__web__background--text--2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.main__web__background--text--2 img {
+    width: 1rem;
+}
+
+.main__web__background--text--2 h3 {
+    font-weight: 500;
+    font-family: var(--title-font);
+    font-size: 14pt;
+}
+
+.main__web__background--text--3 {
+    width: 26.35rem;
+}
+
+.main__web__background--text--3 p {
+    color: var(--fifth-color);
+    font-size: 11pt;
+}
+
+.main__web__background--text--4 {
+    background-color: var(--primary-color);
+    width: 14.5rem;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 13pt;
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.main__web__background--text--5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    font-family: var(--title-font);
+    font-size: 13pt;
+}
+
 /* why our index start here */
 #h--i--2 {
     margin-top: -3rem;
@@ -1367,7 +1436,7 @@ li {
     margin-left: 15rem;
     margin-right: 15rem;
     margin-top: 2rem;
-    font-family: var(--principal-font);
+    font-family: var(--text-font);
 }
 
 .why__our__i__text-p {
@@ -1378,12 +1447,12 @@ li {
 .why--our__i h2 {
     margin-bottom: 1rem;
     font-size: 24pt;
-    font-weight: 600;
+    font-family: var(--title-font);
 }
 
 .why__our__i__text-p p {
     font-size: 14pt;
-    font-weight: 400;
+
 }
 
 .why--our__i__container {
@@ -1399,18 +1468,29 @@ li {
 
 .why--our__i__cards {
     height: 400px;
-
-    background: rgba(29, 142, 43, 0.82);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    /*background: rgba(29, 142, 43, 0.82);*/
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     display: grid;
 }
 
+.w--o__i__c__img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    position: relative;
+    left: 7.7rem;
+}
+
 .w--o__i__c__text {
-    color: var(--secondary-color);
+    /*color: var(--secondary-color);*/
     font-size: 12pt;
+    font-family: var(--text-font);
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /* why our index end here */
@@ -1979,8 +2059,9 @@ li {
 .productos__container--list--slsbio--3,
 .productos__container--list--bpkraft--4,
 .productos__container--list--bdjdesc--6,
-.productos__container--list--sbtbio--7
-    {
+.productos__container--list--sbtbio--7,
+.productos__container--list--vsbdfr--8,
+.productos__container--list--vsbdcl--9 {
     background-color: var(--fourth-color);
 }
 
@@ -2136,7 +2217,27 @@ li {
 .products__list--sbtbio3,
 .products__list--sbtbio4,
 .products__list--sbtbio5,
-.products__list--sbtbio6 {
+.products__list--sbtbio6,
+.products__list--vsbdfr0,
+.products__list--vsbdfr1,
+.products__list--vsbdfr2,
+.products__list--vsbdfr3,
+.products__list--vsbdfr4,
+.products__list--vsbdfr5,
+.products__list--vsbdfr6,
+.products__list--vsbdfr7,
+.products__list--vsbdfr8,
+.products__list--vsbdfr9,
+.products__list--vsbdcl0,
+.products__list--vsbdcl1,
+.products__list--vsbdcl2,
+.products__list--vsbdcl3,
+.products__list--vsbdcl4,
+.products__list--vsbdcl5,
+.products__list--vsbdcl6,
+.products__list--vsbdcl7,
+.products__list--vsbdcl8,
+.products__list--vsbdcl9 {
     /*
     display: flex;
     flex-direction: row;
@@ -2322,7 +2423,27 @@ li {
 .products__list--p-b__sbtbio3,
 .products__list--p-b__sbtbio4,
 .products__list--p-b__sbtbio5,
-.products__list--p-b__sbtbio6 {
+.products__list--p-b__sbtbio6,
+.products__list--p-b__vsbdfr0,
+.products__list--p-b__vsbdfr1,
+.products__list--p-b__vsbdfr2,
+.products__list--p-b__vsbdfr3,
+.products__list--p-b__vsbdfr4,
+.products__list--p-b__vsbdfr5,
+.products__list--p-b__vsbdfr6,
+.products__list--p-b__vsbdfr7,
+.products__list--p-b__vsbdfr8,
+.products__list--p-b__vsbdfr9,
+.products__list--p-b__vsbdcl0,
+.products__list--p-b__vsbdcl1,
+.products__list--p-b__vsbdcl2,
+.products__list--p-b__vsbdcl3,
+.products__list--p-b__vsbdcl4,
+.products__list--p-b__vsbdcl5,
+.products__list--p-b__vsbdcl6,
+.products__list--p-b__vsbdcl7,
+.products__list--p-b__vsbdcl8,
+.products__list--p-b__vsbdcl9 {
     display: inline-flex;
     flex-direction: row;
     gap: 2.4rem;
