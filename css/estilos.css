@@ -444,8 +444,9 @@ li {
 .m-width-1460 {
     /*max-width: 1460px;
     margin: 0 auto;*/
-    margin-left: 2rem;
-    margin-right: 2rem;
+    
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .banner__img {
@@ -1321,6 +1322,10 @@ li {
 }
 
 /* TODO Main Index */
+main {
+    background-image: url(../images/background/envases_Fondo_web_oficial.png);
+}
+
 #h--i,
 #b--i {
     /*position: relative;
@@ -1599,13 +1604,13 @@ li {
 .notice__i--img {
     width: 600px;
     height: 400px;
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
 }
 
 .notice__i--text {
     font-family: var(--text-font);
     position: relative;
-    top: 2.5rem;
+    top: 1.6rem;
 }
 
 .notice__i--text h2 {
@@ -1613,6 +1618,22 @@ li {
     font-size: 24pt;
     font-weight: 600;
     font-family: var(--title-font);
+    line-height: 110%;
+    margin-bottom: 0.8rem;
+}
+
+.notice__i--text--0 {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    width: 9rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin-bottom: 1.1rem;
+}
+
+.notice__i--text--0 a {
+    font-family: var(--title-font);
+    color: var(--secondary-color);
 }
 
 .notice__i--caction {
@@ -1631,6 +1652,71 @@ li {
     color: var(--primary-color);
 }
 /* notice index end */
+
+/* Business index start here*/
+#h--i--5 {
+    height: 450px;
+    margin-bottom: 2rem;
+    font-family: var(--text-font);
+}
+
+.business__i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.business__i--style {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    width: 38rem;
+    height: 11rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.business__i--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business__i--title h3 {
+    align-items: center;
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+.business__i--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.business__i--horeca,
+.business__i--obussiness {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    width: 11rem;
+    font-family: var(--title-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business__i--horeca a,
+.business__i--obussiness a {
+    text-align: center;
+    font-size: 14pt;
+    color: var(--primary-color);
+}
+/* Business index end here*/
 
 /* Testimonials start here*/
 .glider,
