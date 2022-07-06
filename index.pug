@@ -32,12 +32,16 @@ html(lang="en")
         //-Header start here
         include templates/header.pug
         //-Header end here
+        //- Header phone start here
+        include templates/menu.pug
+        //- Header phone end here
         //-Main start here
         main
             #h--1
                 #b--i 
                     .main__web__background
-                        img(src="images/banner/EnvasesBiodegradablesEcoEstrategiaPeruanaOficial.png", alt=" Banner envases biodegradables peru")
+                        img.banner__desktop(src="images/banner/EnvasesBiodegradablesEcoEstrategiaPeruanaOficial.png", alt=" Banner envases biodegradables peru")
+                        img.banner__phone(src="images/banner/phone/movil_fondo.png", alt=" Banner envases biodegradables peru")
                         .main__web__background--text 
                             .main__web__background--text--1
                                 h2 Envases Biodegradables de Caña de Azúcar para Alimentos en Perú
@@ -137,7 +141,7 @@ html(lang="en")
         //-Testimonials section starts here
         section.testimonials.testimonials--space
             h2.testimonials--title Lo que dicen de nuestros envases biodegradables
-            p.testimonials--text >Nuestra mejor carta de presentación son nuestros clientes. Ellos confiaron en nuestros Empaques Descartables Ecológicos.
+            p.testimonials--text Nuestra mejor carta de presentación son nuestros clientes. Ellos confiaron en nuestros Empaques Descartables Ecológicos.
             .testimonials__container
                 button.testimonials__container--previous(aria-label="Anterior")
                     img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-left.svg",
