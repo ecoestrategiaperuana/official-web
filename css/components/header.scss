@@ -113,6 +113,7 @@
 	text-align: left;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+  gap: 0.3rem;
 	label {
 		font-size: 15pt;
 		font-weight: 500;
@@ -131,6 +132,7 @@
 	text-align: left;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+  gap: 0.3rem;
 	label {
 		font-size: 15pt;
 		font-weight: 500;
@@ -162,6 +164,23 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+}
+.pc-nav {
+  #menucheckbox {
+    display: none;
+  }
+  .checkbtna {
+    float: right;
+    cursor: pointer;
+    line-height: 4rem;
+    font-size: 20pt;
+    color: $secondary-color;
+    margin-right: 2rem;
+    display: none;
+  }
+  .index--home {
+    display: none;
+  }
 }
 .h__container--menu {
 	display: grid;
@@ -225,10 +244,10 @@
 	margin-right: 55rem;
 	visibility: hidden;
 	transition: 0.3s ease-in-out;
-	border-radius: 0 0 10% 10%;
+	border-radius: 0 0 10px 10px;
 	img {
-		width: 40px;
-		height: 40px;
+		width: 38px;
+		height: 38px;
 		margin-left: 15px;
 	}
 	svg {
@@ -956,8 +975,68 @@
 }
 
 @media screen and (max-width: 412px) {
-  .header{
-    display: none;
+  .header {
+		.htop {
+			display: none;
+		}
+		.header-box {
+      .m-width-1460 {
+        margin: 0;
+      }
+			margin: 0;
+		}
+	}
+  .nav-box {
+    display: unset;
+  }
+  .h__container--menu {
+    grid-template-columns: auto;
+  }
+  .pc-nav {
+    .checkbtna {
+      display: block;
+    }
+    .index--home {
+      display: inline-flex;
+      margin-top: 1.2rem;
+      margin-left: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+    .h__container--menu {
+      display: inline-flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: $primary-color;
+      top: 4rem;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      gap: 0;
+      li {
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 1rem;
+        a:hover {
+          background: none;
+        }
+        a:active {
+          background: none;
+        }
+        .header__container--menu--list--li--a--iconActive {
+          display: none;
+        }
+      }
+    }
+    #menucheckbox:checked ~ .h__container--menu {
+      left: 0;
+    }
   }
 }
 
