@@ -102,7 +102,7 @@ html(lang="en")
                     .customize__i
                         .customize__i--title
                         .customize__i--container
-                            .customize__i--img: img(src="images/web_s/Personalizar_Logo_Imagen.png", alt="")
+                            .customize__i--img: img(src="images/customize/desktop/customize_logo.png", alt="")
                             .customize__i--text
                                 h2 Personaliza tu logo
                                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae inventore sit molestiae sint facere quos natus ratione, corrupti ex nemo! Enim officia tempora ducimus nemo impedit laudantium repudiandae aperiam quam.
@@ -133,10 +133,10 @@ html(lang="en")
                             .business__i--title
                                 h3 ¿Qué tipo de negocio tienes?
                             .business__i--container 
-                                .business__i--horeca
-                                    a(href="")  Horeca 
-                                .business__i--obussiness
-                                    a(href="")  Otros negocios
+                                a.business__i--horeca(href="")
+                                    p  Horeca 
+                                a.business__i--obussiness(href="")
+                                    p  Otros negocios
         //-Main end here
         //-Testimonials section starts here
         section.testimonials.testimonials--space
@@ -144,8 +144,9 @@ html(lang="en")
             p.testimonials--text Nuestra mejor carta de presentación son nuestros clientes. Ellos confiaron en nuestros Empaques Descartables Ecológicos.
             .testimonials__container
                 button.testimonials__container--previous(aria-label="Anterior")
-                    img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-left.svg",
-                    alt="Icono de Flecha Izquierda para retroceder al Anterior")
+                    //- img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-left.svg",
+                    //- alt="Icono de Flecha Izquierda para retroceder al Anterior")
+                    i.fa-solid.fa-arrow-left
                 .testimonials__container--carousel
                     //- Slide 1
                     .testimonials__container--carousel--slide
@@ -301,8 +302,9 @@ html(lang="en")
                             p.testimonials__container--carousel--slide--name Omar Armando Moreno
                             p.testimonials__container--carousel--slide--charge Dueño de Restaurant
                 button.testimonials__container--after(aria-label="Siguiente")
-                    img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-right.svg",
-                    alt="Icono de Flecha Derecha para avanzar al Siguiente")
+                    //- img(loading="lazy", src="../images/landings/contenedores/desktop/arrow-right.svg",
+                    //- alt="Icono de Flecha Derecha para avanzar al Siguiente")
+                    i.fa-solid.fa-arrow-right
                 .testimonials__indicators(role="tablist")
         //-Testimonials section ends here
         //-Footer starts here
