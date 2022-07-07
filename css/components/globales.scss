@@ -21,6 +21,19 @@ $color-product--feature: #C4C4B7;
 $color--product--hover: #6AD628;
 $color-icon-movil: #888888;
 
+$primary-color: #1d8e2b;
+$secondary-color: #fff;
+$third-color: #808080;
+$fourth-color: #e9eaeb;
+$fifth-color: #707070;
+$title-font: 'Poppins', sans-serif;
+$text-font: 'Lora', serif;
+$principal-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$secondary-font: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$surface-color: #fff;
+$curve: 40;
+$star: #ffca28;
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +51,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 700;
+  font-family: $title-font;
+}
+
+main {
+	background-image: url(../images/background/envases_Fondo_web_oficial.png);
 }
 
 figure {
