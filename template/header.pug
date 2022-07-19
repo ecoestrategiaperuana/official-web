@@ -1,0 +1,58 @@
+header.navbar-eco.position-fixed
+    .navbar-eco-top.colorGreen.fontBold.py-3
+        .container.d-flex.justify-content-center.justify-content-md-between.align-items-center
+            .d-none.d-md-flex
+                span
+                    span.pr-3(data-lang-type='label', data-lang='header.customerService') Contáctenos
+                    span.text-nowrap
+                        i.far.fa-phone.pr-2.font-size-150
+                        span(data-lang-type='content', data-lang='header.csPhone') +51 952 526 242
+                span.d-flex.navbar-eco-top__email.align-items-center
+                    i.far.fa-envelope.pr-2.font-size-150
+                    a.no-icon-after(href='mailto:contacto@ecoestrategiaperuana.com')
+                        span(data-lang-type='content', data-lang='header.csEmail') contacto@ecoestrategiaperuana.com
+            .d-flex.align-items-center
+                .d-flex.align-items-center.navbar-eco-top__region.ml-0.ml-md-5.position-relative.hidePopupsTrigger.showPartnerPopup
+                    i.fas.fa-map-marker-alt.fa-2x.mr-2
+                    span Lima, Per&uacute;
+                .navbar-eco-top__login.cursor-pointer
+                    span.d-inline-block.hidePopupsTrigger(aria-expanded='false', aria-label='Toggle navigation', role='button', data-toggle='collapse', data-target='#navbarToggleUser')
+                        img.pr-2.font-size-150.img-user(src='../assets/img/biopacking-logo-blanco.png')
+    nav.navbar-eco-bottom.navbar.navbar-expand-md.d-flex.align-items-center.p-0
+        nav.navbar.navbar-light.navbar-expand-md.container.d-flex.flex-nowrap.align-items-center.position-relative.px-3.py-3
+            .container-fluid
+                a.navbar-brand(href='../index.html')
+                    img.img-fluid.img-logo-menu.w-100(src='../assets/img/logo_oscuro.svg', alt='Logo de Eco Estrategia Peruana')
+                button.navbar-toggler(data-bs-toggle='collapse', data-bs-target='#navcol-1')
+                    span.visually-hidden
+                        | Toggle
+                        | navigation
+                    span.navbar-toggler-icon
+                #navcol-1.collapse.navbar-collapse.justify-content-center.navbar-eco-links-container
+                    ul.navbar-nav.navbar-eco-links.justify-content-evenly
+                        li.nav-item.nav-eco-item.px-4.px-md-0
+                            a.nav-link.active.d-flex.w-100.justify-content-between.align-items-center.no-icon-after(href='#')
+                                span Productos
+                                span.nav-eco-item__icon.d-inline-block.d-md-none.ml-3.font-size-125.fas.fa-chevron-right
+                        li.nav-item.nav-eco-item.px-4.px-md-0
+                            a.nav-link.active.d-flex.w-100.justify-content-between.align-items-center.no-icon-after(href='#')
+                                span Nosotros
+                                span.nav-eco-item__icon.d-inline-block.d-md-none.ml-3.font-size-125.fas.fa-chevron-right
+                        li.nav-item.nav-eco-item.px-4.px-md-0
+                            a.nav-link.active.d-flex.w-100.justify-content-between.align-items-center.no-icon-after(href='#')
+                                span Noticias
+                                span.nav-eco-item__icon.d-inline-block.d-md-none.ml-3.font-size-125.fas.fa-chevron-right
+                        li.nav-item.nav-eco-item.px-4.px-md-0
+                            a.nav-link.active.d-flex.w-100.justify-content-between.align-items-center.no-icon-after(href='../Menu/preguntas.html')
+                                span Preguntas
+                                span.nav-eco-item__icon.d-inline-block.d-md-none.ml-3.font-size-125.fas.fa-chevron-right
+                        li.nav-item.nav-eco-item.px-4.px-md-0
+                            a.nav-link.active.d-flex.w-100.justify-content-between.align-items-center.no-icon-after(href='../Menu/venta-mayorista.html')
+                                span Venta mayorista
+                                span.nav-eco-item__icon.d-inline-block.d-md-none.ml-3.font-size-125.fas.fa-chevron-right
+                .nav-eco-bottom__buttons.d-flex.justify-content-end.cursor-pointer
+                    .navbar-eco-bottom__button.d-none.d-md-block.mx-4.eco-search-trigger.hidePopupsTrigger
+                        span.fal.fa-search.font-size-150(aria-controls='ecoSearchResult', aria-expanded='false', role='button')
+                    .navbar-eco-bottom__button.getCartContentsTrigger.hidePopupsTrigger(data-toggle='collapse', data-target='#navbarToggleExternalCart', aria-controls='navbarToggleExternalCart', aria-expanded='false', aria-label='Toggle navigation', role='button')
+                        span.cartTempNumber.cart-item-number 0
+                        span.fal.fa-shopping-cart.font-size-150.colorWhite
