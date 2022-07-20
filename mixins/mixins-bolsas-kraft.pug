@@ -1,4 +1,4 @@
-mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniImg1, miniImg2, miniImg3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, unidadesCajaColumn, unidadesPaqueteColumn, medidaColumn, pesoColumn, alimentosTempColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProCategory0, otherProCodigo0, otherProDescription0, otherProImg1, otherProCategory1, otherProCodigo1, otherProDescription1, otherProImg2, otherProCategory2, otherProCodigo2, otherProDescription2)
+mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniImg1, miniImg2, miniImg3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, medidaColumn, marcaColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProCategory0, otherProCodigo0, otherProDescription0, otherProImg1, otherProCategory1, otherProCodigo1, otherProDescription1, otherProImg2, otherProCategory2, otherProCodigo2, otherProDescription2)
     main.mainContent
         .siteSection--background-white.py-xl-0.py-xxl-2.category-margen
             .container
@@ -79,7 +79,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                                     | Categoría:
                                                     span.categoria__list--accordion--span= categoryColumn
                                                 li.categoria__list--accordion
-                                                    | Tamaño:
+                                                    | Peso:
                                                     span.categoria__list--accordion--span= sizeColumn
                                                 li.categoria__list--accordion
                                                     | Material:
@@ -87,19 +87,11 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                                 li.categoria__list--accordion.categoria__list--accordion--unset= fabricadoColumn
                                                     br
                                                 li.categoria__list--accordion
-                                                    | Unidades por
-                                                    | caja:
-                                                    span.categoria__list--accordion--span= unidadesCajaColumn
-                                                li.categoria__list--accordion
-                                                    | Unidades por
-                                                    | paquete:
-                                                    span.categoria__list--accordion--span= unidadesPaqueteColumn
-                                                li.categoria__list--accordion
                                                     | Medidas:
                                                     span.categoria__list--accordion--span= medidaColumn
                                                 li.categoria__list--accordion
-                                                    | Alimentos:
-                                                    span.categoria__list--accordion--span= alimentosTempColumn
+                                                    | Marca:
+                                                    span.categoria__list--accordion--span= marcaColumn
                                                 li.categoria__list--accordion
                                                     | Color:
                                                     span.categoria__list--accordion--span= colorColumn
@@ -178,7 +170,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                     #collapseSeven.accordion-collapse.collapse.show(aria-labelledby='headingSeven', data-bs-parent='#accordionExample')
                                         .accordion-body
                                             p
-                                                | Realizamos envíos y venta de salseros descartables de fécula de maíz a todos
+                                                | Realizamos envíos y venta de bolsas biodegradables de papel kraft a todos
                                                 | los departamentos del Perú
                                                 br
                                                 br
