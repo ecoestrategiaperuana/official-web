@@ -1,0 +1,229 @@
+mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniImg1, miniImg2, miniImg3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, unidadesCajaColumn, marcaColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProCategory0, otherProCodigo0, otherProDescription0, otherProImg1, otherProCategory1, otherProCodigo1, otherProDescription1, otherProImg2, otherProCategory2, otherProCodigo2, otherProDescription2)
+    main.mainContent
+        .siteSection--background-white.py-xl-0.py-xxl-2.category-margen
+            .container
+                .row
+                    .col-12.text-center.container__list
+                        ul.breadcrumbs(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+                            li.breadcrumbs__single(itemprop='itemListElement', itemtype='http://schema.org/ListItem', itemscope='')
+                                a(href='#', itemprop='item')
+                                    span(itemprop='name')= catalogo
+                                span.breadcrumbs__seperator /
+                                a(href='#', itemprop='item')
+                                    span(itemprop='name')= nameCategory
+                                span.breadcrumbs__seperator /
+                                a(href='#', itemprop='item')
+                                    span(itemprop='name')= nameProduct
+        .siteSection.siteSection--background-white
+            .container
+                .row
+                    .col.col__space
+        .siteSection.siteSection--background-white.py-sm-3.py-xl-1.py-4
+            .container
+                .row
+                    .col
+                        .item__top.d-flex.flex-column.flex-md-row.justify-content-between
+                            .sproduct.d-flex.align-items-center.justify-content-center
+                                .container
+                                    .img__container.d-flex.justify-content-center.align-items-center
+                                        img.main__img.img-fluid.w-100(src=mainImg)
+                                    .thumbnail__container.d-flex.justify-content-between
+                                        img.thumbnail.img-fluid.active-img(src=miniImg0)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg1)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg2)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg3)
+                            .item__data
+                                h1.item__name.pb-4.pt-md-0.h3= h1Product
+                                .item__sku.pb-4
+                                    span(data-lang-type='label', data-lang='general.sku') CODE: 
+                                    span.colorGreen= codeProduct
+                                .d-flex.flex-wrap.pb-4.align-items-center
+                                    .item__stock-message.mr-4
+                                        span.colorGreen
+                                            em.fal.fas.fa-check-circle
+                                            span(data-lang-type='label', data-lang='catalogue.inStock')= stock
+                                    .px-3
+                                        a.siteButton.siteButton--white.colorGreen.my-1.px-0.text-normal.smallText.showElement(href='#', data-hide-element='.item__bottom-section', data-show-element='#categoria', data-show-callback='toggleActive', data-show-callback-element='{"add":"#tab-alternatives","remove":".item__specs-header"}', data-lang-type='label', data-lang='catalogue.seeAlternatives')
+                                            | Ver
+                                            | alternativas
+                                .item__description
+                                    p= descriptionProduct
+                                .pricing.pricing--item.my-3.flex-row.justify-content-between
+                                    .pricing__single.pricing__single--item
+                                        span.pricing__left
+                                            span.pricing__price= priceProduct
+                                            span.pricing__type
+                                                | /
+                                                span(data-lang-type='label', data-lang='uom.case')= unidCantidad
+                                        .pricing__quantity.commercialPricing
+                                .d-flex.align-items-center
+                                    .add-to-cart
+                                        span.siteButton.shadow.text-uppercase.mt-3.mb-0.mx-0.addToCartTriggerCatalogue(data-target='.commercialPricing')
+                                            span.fal.fa-shopping-cart
+                                            span(data-lang-type='label', data-lang='button.addToCart') Cotizar
+                        #item__bottom.siteSection.siteSection--background-white.siteSection--border-b-greyLight.mb-5.pt-4
+                            .accordion
+                                .accordion-item
+                                    h2#headingOne.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Descripción del producto
+                                    #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            p= descriptionColumn
+                                .accordion-item
+                                    h2#headingTwo.accordion-header
+                                        button.btn.btn-primary.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo') Características del producto
+                                    #collapseTwo.accordion-collapse.collapse.show(aria-labelledby='headingTwo', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            ul.caracteristica__lista__productos
+                                                li.categoria__list--accordion
+                                                    | Categoría:
+                                                    span.categoria__list--accordion--span= categoryColumn
+                                                li.categoria__list--accordion
+                                                    | Medidas:
+                                                    span.categoria__list--accordion--span= sizeColumn
+                                                li.categoria__list--accordion
+                                                    | Material:
+                                                    span.categoria__list--accordion--span= materialColumn
+                                                li.categoria__list--accordion.categoria__list--accordion--unset= fabricadoColumn
+                                                    br
+                                                li.categoria__list--accordion
+                                                    | Unidades por
+                                                    | caja:
+                                                    span.categoria__list--accordion--span= unidadesCajaColumn
+                                                li.categoria__list--accordion
+                                                    | Marca:
+                                                    span.categoria__list--accordion--span= marcaColumn
+                                                li.categoria__list--accordion
+                                                    | Color:
+                                                    span.categoria__list--accordion--span= colorColumn
+                                .accordion-item
+                                    h2#headingThree.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='true', aria-controls='collapseThree')
+                                            | Beneficios
+                                            | principales
+                                    #collapseThree.accordion-collapse.collapse.show(aria-labelledby='headingThree', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            ul.descripcion__lista__productos
+                                                li= idealFor
+                                                li= aptoFor
+                                                li= tiempoCompostaje
+                                                li= estructuraResistente
+                                                li= resistenteTo
+                                .accordion-item
+                                    h2#headingFour.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='true', aria-controls='collapseFour')
+                                            | Características
+                                            | destacadas
+                                    #collapseFour.accordion-collapse.collapse.show(aria-labelledby='headingFour', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            ul.caracteristicas--destacadas__lista__productos
+                                                li= caracteristicasDestacadas0
+                                                    br
+                                                li= caracteristicasDestacadas1
+                                                    br
+                                                li= caracteristicasDestacadas2
+                                                    br
+                                .accordion-item
+                                    h2#headingFive.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFive', aria-expanded='true', aria-controls='collapseFive')
+                                            | Garantía y certificaciones
+                                            | del producto
+                                    #collapseFive.accordion-collapse.collapse.show(aria-labelledby='headingFive', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            p= timeGarantia
+                                            ul.garantia-certificaciones__lista__productos
+                                                li
+                                                    | Biodegradable Products Institute (BPI)
+                                                    br
+                                                li
+                                                    | FDS
+                                                    br
+                                                li
+                                                    | Din Certco
+                                                    br
+                                                li
+                                                    | ASTM D6868
+                                                    br
+                                                li
+                                                    | Silliker Asturing Quality World Wid
+                                                    br
+                                                li
+                                                    | ECF
+                                                    br
+                                                li
+                                                    | Moody International
+                                                    br
+                                                li
+                                                    | BRC Certification Body
+                                                    br
+                                                li
+                                                    | Ukas Product Certification
+                                                    br
+                                .accordion-item
+                                    h2#headingSix.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSix', aria-expanded='true', aria-controls='collapseSix') Conocido como
+                                    #collapseSix.accordion-collapse.collapse.show(aria-labelledby='headingSix', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            p= conocidoComo
+                                .accordion-item
+                                    h2#headingSeven.accordion-header
+                                        button.btn.btn-primary.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSeven', aria-expanded='true', aria-controls='collapseSeven') Envíos
+                                    #collapseSeven.accordion-collapse.collapse.show(aria-labelledby='headingSeven', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            p
+                                                | Realizamos envíos y venta de sorbetes biodegradables a todos
+                                                | los departamentos del Perú
+                                                br
+                                                br
+                                                | Amazonas, Ancash, Apurúmac,
+                                                |    Arequipa, Ayacucho, Cajamarca, Callao, Cusco, Huancavelica, Huánuco,
+                                                |    Ica, Junín, La Libertad, Lambayeque, Lima, Loreto, Madre de Dios,
+                                                |    Moquegua, Pasco, Piura, Puno, San Martín, Tacna, Tumbes, Ucayali.
+        .siteSection.siteSection--background-white.we__also__have
+            // Start: Articles Cards
+            .container.py-3.py-xl-3
+                .row.mb-5
+                    .col-md-8.col-xl-6.text-center.mx-auto
+                        h2= otherProTitle
+                .row.gy-4.row-cols-1.row-cols-md-2.row-cols-xl-3
+                    .col.we__also__have--column
+                        .card
+                            .d-flex.justify-content-center.align-items-center
+                                img.fit-cover(style='height: 200px;', src=otherProImg0)
+                            .card-body.p-4
+                                p.text-primary.card-text.mb-0.we__have__text= otherProCategory0
+                                h4.card-title
+                                    a(href='#')= otherProCodigo0
+                                p.card-text= otherProDescription0
+                                .d-flex
+                                    div
+                    .col.we__also__have--column
+                        .card
+                            .d-flex.justify-content-center.align-items-center
+                                img.fit-cover(style='height: 200px;', src=otherProImg1)
+                            .card-body.p-4
+                                p.text-primary.card-text.mb-0.we__have__text= otherProCategory1
+                                h4.card-title 
+                                    a(href='#')= otherProCodigo1
+                                p.card-text= otherProDescription1
+                                    br
+                                .d-flex
+                                    div
+                    .col.we__also__have--column
+                        .card
+                            .d-flex.justify-content-center.align-items-center
+                                img.fit-cover(style='height: 200px;', src=otherProImg2)
+                            .card-body.p-4
+                                p.text-primary.card-text.mb-0.we__have__text= otherProCategory2
+                                h4.card-title 
+                                    a(href='#')= otherProCodigo2
+                                p.card-text= otherProDescription2
+                                    br
+                                .d-flex
+                                    div
+                .d-flex.align-items-center.container__cotizar__producto.justify-content-center
+                    .add-to-cart
+                        span.siteButton.shadow.text-uppercase.mt-3.mb-0.mx-0.addToCartTriggerCatalogue(data-target='.commercialPricing')
+                            span.fal.fa-shopping-cart
+                            span(data-lang-type='label', data-lang='button.addToCart')  VER MÁS
+            // End: Articles Cards
