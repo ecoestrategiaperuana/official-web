@@ -15,3 +15,48 @@ p {
 .pl-2, .px-2 {
     padding-left: 0.5rem!important;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+.m-0 {
+    margin: 0!important;
+}
+
+.siteButton {
+    border: 2px solid #1d8e2b;
+    margin: 2rem auto;
+    display: inline-block;
+    background: #1d8e2b;
+    color: #fff;
+    padding: 0.5em 2rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 10rem;
+    cursor: pointer;
+}
+
+.product__title {
+    font-family: "Poppins", sans-serif;
+}
+
+.product__sku {
+    margin: 1rem 0 0.5rem;
+}
+
+.product__stock-message {
+    margin: 1rem 0;
+    color: #FF0707;
+}
+
+.stock-availability {
+    font-family: "Poppins", sans-serif;
+}
