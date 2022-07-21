@@ -1,0 +1,17 @@
+nav.nav-bottom
+    .popup-whatsapp.fadeIn
+        .content-whatsapp.-top
+            button.btn.closePopup.d-flex.justify-content-center.align-items-center(type='button')
+                i.material-icons.icon-font-color close
+            .d-flex.flex-column-reverse.justify-content-center.align-items-center.gap-2
+                p
+                    | Hola, te saluda Alberto Muñoz de Eco Estrategia Peruana, ¿en que puedo ayudarle?
+                img(src='../assets/img/foto-web2.jpg', width='60', style='border-radius: 50px;')
+        .content-whatsapp.-bottom
+            input#whats-in.whats-input(type='text', placeholder='Enviar mensaje...', style='width: 220px;padding: 10px;')
+            button#send-btn.btn.send-msPopup.d-flex.justify-content-center.align-items-center.text-center(type='button', style='width: 35px;height: 35px;')
+                i.material-icons.icon-font-color--black(style='font-size: 20px;') send
+    button#whats-openPopup.whatsapp-button(type='button')
+        .float
+            i.fab.fa-whatsapp.my-float
+    .circle-anime
