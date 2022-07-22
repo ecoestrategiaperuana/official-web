@@ -103,11 +103,12 @@ html(lang='en')
                                         .catLeft__single-icon.flex-shrink-0
                                             img(src="../assets/img/icon-list/vasos_bebida_caliente.svg", alt="vasos biodegradables ecologicos y reciclables")
                                         .catLeft__single-name
-                                            h5 Vasos para bebidas calienes
+                                            h5 Vasos para bebidas calientes
                         .col-12.col-md-9
                             .catMain.catAdditionalInfo
                                 #catMain__carousel-indicators.catMain__image.carousel.slide
-                                    img.d-block.w-100(src="../assets/img/productos/envases-biodegradables/banner/banner-prueba.avif", alt="")
+                                    img.d-none.w-100.bannerimgpro0(src="../assets/img/productos/envases-biodegradables/banner/envases-biodegradables-desktop.avif", alt="Envases biodegradables Eco Estrategia Peruana")
+                                    img.d-block.w-100.bannerimgpro1(src="../assets/img/productos/envases-biodegradables/banner/envases-biodegradables-movil.avif", alt="Envases biodegradables Eco Estrategia Peruana")
                                     .catMain__body
                                         h1.catMain__title.h5.fontBold
                                             | Envases biodegradables
@@ -260,3 +261,6 @@ html(lang='en')
                                                                 | 100
                                                     span.pricing__quantity.pricing__quantity--list.commercialPricing(data-cat-ref="679", data-productid="11164", data-optionid="28465", placeholder="Qty", spellcheck="false", data-ms-editor="true")
                                                         i.fas.fa-arrow-right
+        include ../template/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+        script(src='../assets/js/script.min.js')

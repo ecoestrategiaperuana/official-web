@@ -1,6 +1,17 @@
 .catMain {
     background: #F8F8F8;
     margin-bottom: 3rem;
+    #catMain__carousel-indicators {
+        @media (min-width: 768px) {
+            .bannerimgpro0 {
+                display: block !important;
+            }
+
+            .bannerimgpro1 {
+                display: none !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
