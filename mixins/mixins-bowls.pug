@@ -1,4 +1,4 @@
-mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt0, miniImg0, miniAlt0, miniImg1, miniAlt1, miniImg2, miniAlt2 miniImg3, miniAlt3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, unidadesCajaColumn, unidadesPaqueteColumn, baseColumn, altoColumn, tapaColumn, pesoColumn, alimentosTempColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProAlt0, otherProCategory0, otherProCodigo0, otherProDescription0, otherProImg1, otherProAlt1, otherProCategory1, otherProCodigo1, otherProDescription1, otherProImg2, otherProAlt2, otherProCategory2, otherProCodigo2, otherProDescription2)
+mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt0, miniImg0, miniAlt0, miniImg1, miniAlt1, miniImg2, miniAlt2, miniImg3, miniAlt3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, unidadesCajaColumn, unidadesPaqueteColumn, baseColumn, altoColumn, tapaColumn, pesoColumn, alimentosTempColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProAlt0, otherProCategory0, url0, otherProCodigo0, otherProDescription0, otherProImg1, otherProAlt1, otherProCategory1, url1, otherProCodigo1, otherProDescription1, otherProImg2, otherProAlt2, otherProCategory2, url2, otherProCodigo2, otherProDescription2)
     main.mainContent
         .siteSection--background-white.py-xl-0.py-xxl-2.category-margen
             .container
@@ -209,7 +209,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt0, miniI
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory0
                                 h4.card-title
-                                    a(href='#')= otherProCodigo0
+                                    a(href= url0)= otherProCodigo0
                                 p.card-text= otherProDescription0
                                 .d-flex
                                     div
@@ -220,7 +220,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt0, miniI
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory1
                                 h4.card-title 
-                                    a(href='#')= otherProCodigo1
+                                    a(href= url1)= otherProCodigo1
                                 p.card-text= otherProDescription1
                                     br
                                 .d-flex
@@ -232,7 +232,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt0, miniI
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory2
                                 h4.card-title 
-                                    a(href='#')= otherProCodigo2
+                                    a(href= url2)= otherProCodigo2
                                 p.card-text= otherProDescription2
                                     br
                                 .d-flex
