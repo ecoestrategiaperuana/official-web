@@ -39,9 +39,9 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt, miniIm
                                     span.colorGreen= codeProduct
                                 .d-flex.flex-wrap.pb-4.align-items-center
                                     .item__stock-message.mr-4
-                                        span.colorGreen
+                                        span.colorRed
                                             em.fal.fas.fa-check-circle
-                                            span(data-lang-type='label', data-lang='catalogue.inStock') &nbsp;Stock disponible
+                                            span(data-lang-type='label', data-lang='catalogue.inStock') &nbsp;Stock no disponible
                                     .px-3
                                         a.siteButton.siteButton--white.colorGreen.my-1.px-0.text-normal.smallText.showElement(href='../Categorias/platos-biodegradables.html', data-hide-element='.item__bottom-section', data-show-element='#categoria', data-show-callback='toggleActive', data-show-callback-element='{"add":"#tab-alternatives","remove":".item__specs-header"}', data-lang-type='label', data-lang='catalogue.seeAlternatives')
                                             | Ver
