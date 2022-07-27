@@ -1,4 +1,4 @@
-mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniImg1, miniImg2, miniImg3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, unidadesCajaColumn, unidadesPaqueteColumn, medidaColumn, pesoColumn, alimentosTempColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProCategory0, otherProCodigo0, otherProDescription0, otherProImg1, otherProCategory1, otherProCodigo1, otherProDescription1, otherProImg2, otherProCategory2, otherProCodigo2, otherProDescription2)
+mixin productsView(catalogo, nameCategory, nameProduct, mainImg, mainAlt, miniImg0, miniAlt0, miniImg1, miniAlt1, miniImg2, miniAlt2, miniImg3, miniAlt3, h1Product, codeProduct, stock, descriptionProduct, priceProduct, unidCantidad, descriptionColumn, categoryColumn, sizeColumn, materialColumn, fabricadoColumn, medidaColumn, altoColumn, anchoColumn, baseColumn, marcaColumn, colorColumn, idealFor, aptoFor, tiempoCompostaje, estructuraResistente, resistenteTo, caracteristicasDestacadas0, caracteristicasDestacadas1, caracteristicasDestacadas2, timeGarantia, conocidoComo, otherProTitle, otherProImg0, otherProAlt0, otherProCategory0, url0, otherProCodigo0, otherProDescription0, otherProImg1, otherProAlt1, otherProCategory1, url1, otherProCodigo1, otherProDescription1, otherProImg2, otherProAlt2, otherProCategory2, url2, otherProCodigo2, otherProDescription2)
     main.mainContent
         .siteSection--background-white.py-xl-0.py-xxl-2.category-margen
             .container
@@ -9,10 +9,10 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                 a(href='#', itemprop='item')
                                     span(itemprop='name')= catalogo
                                 span.breadcrumbs__seperator /
-                                a(href='#', itemprop='item')
+                                a(href='../Categorias/bolsas-kraft.html', itemprop='item')
                                     span(itemprop='name')= nameCategory
                                 span.breadcrumbs__seperator /
-                                a(href='#', itemprop='item')
+                                a(href='../Categorias/bolsas-kraft.html', itemprop='item')
                                     span(itemprop='name')= nameProduct
         .siteSection.siteSection--background-white
             .container
@@ -26,12 +26,12 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                             .sproduct.d-flex.align-items-center.justify-content-center
                                 .container
                                     .img__container.d-flex.justify-content-center.align-items-center
-                                        img.main__img.img-fluid.w-100(src=mainImg)
+                                        img.main__img.img-fluid.w-100(src=mainImg, alt=mainAlt)
                                     .thumbnail__container.d-flex.justify-content-between
-                                        img.thumbnail.img-fluid.active-img(src=miniImg0)
-                                        img.thumbnail.img-fluid.vw-100(src=miniImg1)
-                                        img.thumbnail.img-fluid.vw-100(src=miniImg2)
-                                        img.thumbnail.img-fluid.vw-100(src=miniImg3)
+                                        img.thumbnail.img-fluid.active-img(src=miniImg0, alt=miniAlt0)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg1, alt=miniAlt1)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg2, alt=miniAlt2)
+                                        img.thumbnail.img-fluid.vw-100(src=miniImg3, alt=miniAlt3)
                             .item__data
                                 h1.item__name.pb-4.pt-md-0.h3= h1Product
                                 .item__sku.pb-4
@@ -39,11 +39,11 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                     span.colorGreen= codeProduct
                                 .d-flex.flex-wrap.pb-4.align-items-center
                                     .item__stock-message.mr-4
-                                        span.colorGreen
+                                        span.colorRed
                                             em.fal.fas.fa-check-circle
                                             span(data-lang-type='label', data-lang='catalogue.inStock')= stock
                                     .px-3
-                                        a.siteButton.siteButton--white.colorGreen.my-1.px-0.text-normal.smallText.showElement(href='#', data-hide-element='.item__bottom-section', data-show-element='#categoria', data-show-callback='toggleActive', data-show-callback-element='{"add":"#tab-alternatives","remove":".item__specs-header"}', data-lang-type='label', data-lang='catalogue.seeAlternatives')
+                                        a.siteButton.siteButton--white.colorGreen.my-1.px-0.text-normal.smallText.showElement(href='../Categorias/bolsas-kraft.html', data-hide-element='.item__bottom-section', data-show-element='#categoria', data-show-callback='toggleActive', data-show-callback-element='{"add":"#tab-alternatives","remove":".item__specs-header"}', data-lang-type='label', data-lang='catalogue.seeAlternatives')
                                             | Ver
                                             | alternativas
                                 .item__description
@@ -79,7 +79,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                                     | Categoría:
                                                     span.categoria__list--accordion--span= categoryColumn
                                                 li.categoria__list--accordion
-                                                    | Tamaño:
+                                                    | Peso:
                                                     span.categoria__list--accordion--span= sizeColumn
                                                 li.categoria__list--accordion
                                                     | Material:
@@ -87,19 +87,20 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                                 li.categoria__list--accordion.categoria__list--accordion--unset= fabricadoColumn
                                                     br
                                                 li.categoria__list--accordion
-                                                    | Unidades por
-                                                    | caja:
-                                                    span.categoria__list--accordion--span= unidadesCajaColumn
-                                                li.categoria__list--accordion
-                                                    | Unidades por
-                                                    | paquete:
-                                                    span.categoria__list--accordion--span= unidadesPaqueteColumn
-                                                li.categoria__list--accordion
                                                     | Medidas:
                                                     span.categoria__list--accordion--span= medidaColumn
                                                 li.categoria__list--accordion
-                                                    | Alimentos:
-                                                    span.categoria__list--accordion--span= alimentosTempColumn
+                                                    | Alto:
+                                                    span.categoria__list--accordion--span= altoColumn
+                                                li.categoria__list--accordion
+                                                    | Ancho:
+                                                    span.categoria__list--accordion--span= anchoColumn
+                                                li.categoria__list--accordion
+                                                    | Base:
+                                                    span.categoria__list--accordion--span= baseColumn
+                                                li.categoria__list--accordion
+                                                    | Marca:
+                                                    span.categoria__list--accordion--span= marcaColumn
                                                 li.categoria__list--accordion
                                                     | Color:
                                                     span.categoria__list--accordion--span= colorColumn
@@ -178,7 +179,7 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                                     #collapseSeven.accordion-collapse.collapse.show(aria-labelledby='headingSeven', data-bs-parent='#accordionExample')
                                         .accordion-body
                                             p
-                                                | Realizamos envíos y venta de salseros descartables de fécula de maíz a todos
+                                                | Realizamos envíos y venta de bolsas biodegradables de papel kraft a todos
                                                 | los departamentos del Perú
                                                 br
                                                 br
@@ -196,22 +197,22 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                     .col.we__also__have--column
                         .card
                             .d-flex.justify-content-center.align-items-center
-                                img.fit-cover(style='height: 200px;', src=otherProImg0)
+                                img.fit-cover(style='height: 200px;', src=otherProImg0, alt=otherProAlt0)
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory0
                                 h4.card-title
-                                    a(href='#')= otherProCodigo0
+                                    a(href=url0)= otherProCodigo0
                                 p.card-text= otherProDescription0
                                 .d-flex
                                     div
                     .col.we__also__have--column
                         .card
                             .d-flex.justify-content-center.align-items-center
-                                img.fit-cover(style='height: 200px;', src=otherProImg1)
+                                img.fit-cover(style='height: 200px;', src=otherProImg1, alt=otherProAlt1)
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory1
                                 h4.card-title 
-                                    a(href='#')= otherProCodigo1
+                                    a(href=url1)= otherProCodigo1
                                 p.card-text= otherProDescription1
                                     br
                                 .d-flex
@@ -219,11 +220,11 @@ mixin productsView(catalogo, nameCategory, nameProduct, mainImg, miniImg0, miniI
                     .col.we__also__have--column
                         .card
                             .d-flex.justify-content-center.align-items-center
-                                img.fit-cover(style='height: 200px;', src=otherProImg2)
+                                img.fit-cover(style='height: 200px;', src=otherProImg2, alt=otherProAlt2)
                             .card-body.p-4
                                 p.text-primary.card-text.mb-0.we__have__text= otherProCategory2
                                 h4.card-title 
-                                    a(href='#')= otherProCodigo2
+                                    a(href=url2)= otherProCodigo2
                                 p.card-text= otherProDescription2
                                     br
                                 .d-flex
